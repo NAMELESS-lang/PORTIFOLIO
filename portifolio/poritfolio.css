@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gemunu+Libre:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gemunu+Libre:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    background-color: none;
+    position:static;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #322d2d;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+@keyframes surgir{
+    0%{
+        transform: translateY(30px);
+    }
+} 
+
+@keyframes surgir_contato{
+    0%{
+        transform: translateX(-30px);
+    }
+} 
+
+
+
+.titulos{
+    color:#ebebeb;
+    font-family: "Bebas Neue", sans-serif;
+}
+.pessoais{
+    padding-top: 30px;
+    border:none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px; 
+    color: yellow;
+    text-decoration: none;
+    animation: surgir 2s;
+}
+
+ul{
+    color:#ebebeb;
+    font-family: "Roboto Condenseds", sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+.pessoais:hover{
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+
+.divtotal{
+    display: grid;
+    grid-template-columns: 2;
+}
+
+
+.divnome{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    animation: surgir 2s;
+}
+.divnome h2{
+    color: yellow;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 40px;
+}
+
+.fotopessoa{
+    grid-row:1 ;
+    grid-column: 1;
+    padding-left: 100px;
+    color: #ebebeb;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+.divcontato{
+    padding-left: 100px;
+    padding-top: 550px;
+    color:#ebebeb;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    animation: surgir 2s;
+}
+
+.divcontato h4{
+    font-size: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    animation: surgir_contato 2s;
+}
+
+.webdev{
+    padding-top: 50px;
+    color:#ebebeb;
+    grid-row: 1;
+    grid-column: 1;
+    font-family: "Gemunu Libre", sans-serif;
+    font-size: 100px;
+    text-align: center;
+    padding-right: 35px;
+    font-size: 130px;
+    animation: surgir 2s;
+}
+
+.divtitle{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
+.divtitle h2{
+    font-size: 60px;
+}
+.git{
+    width: 125px;
+    height: 125px;
+    animation: surgir 2s;
+}
+
+.linkedin{
+    padding-top: 30px;
+    width: 75px;
+    height: 75px;
+    animation: surgir 2s;
+}
