@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Oswald:wght@200..700&display=swap');
 
 body{
-    background: linear-gradient(to right, #3a7e8b 72.4%, #f3f2f2 25%);
+    /* background: linear-gradient(to right, #3a7e8b 72.4%, #f3f2f2 25%); */
+    background-image: url(Design\ sem\ nome.png);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-color: #e7e7e7;
     margin: 0;
     padding: 0;
 }
@@ -26,26 +30,30 @@ header{
     padding-right: 45%;
 }
 
+b{
+    color: #3a7e8b;
+}
+
 h2{
     font-size: 40px;
     font-family:"Faculty Glyphic";
 }
 .para_titulo{
     font-family: "Faculty Glyphic";
-    color: #e7e7e7;
+    color: black;
     padding-left: 45%;
-    font-size: 60px;
+    font-size: 45px;
 }
 
 h1{
    margin-top: 100px;
    margin-bottom: 100px;
    font-family: "Faculty Glyphic"; 
-   font-size: 80px;
+   font-size:60px;
 }
 
 .divtitulo { 
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .divfoto { 
@@ -55,22 +63,19 @@ h1{
 
 .linke_git{
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 20%;
+    justify-content: space-evenly;
+    padding-left: 30px
 }
 
-
-.h1_ferramentas{
+.h2_ferramentas{
     text-align: center;
 }
 .div_ferramentas{
     background-color:#e7e7e7;
 }
-.grid_ferramentas{
-    background-color: #3a7e8b;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+.grid_ferramentas,.grid_projetos{
+    display: flex;
+    justify-content: space-around;
 }
 
 .div_ferramenta{
@@ -79,4 +84,9 @@ h1{
     border-radius: 50px;
     display: flex;
     justify-content: center;
+}
+
+.div_formacao{
+    display: flex;
+    justify-content: space-around;
 }
