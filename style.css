@@ -171,7 +171,7 @@ h3{
 
 legend{
     text-align:center;
-    color: rgb(238, 164, 5);
+    color: #eea405;
     font-weight: 300;
     font-size: 30px;
     font-family: "Quicksand", sans-serif;;
@@ -223,7 +223,7 @@ fieldset{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    background-color: #05131b;
+    background-color: #04151e;
     margin: 20px;
     width: 150px;
     height: 150px;
@@ -240,17 +240,6 @@ fieldset{
     margin: 20px;
     width: 245px;
     height: 150px;
-}
-
-
-.div_formacao{
-    display: flex;
-    justify-content: space-around;
-}
-
-.h2_formacao{
-    color: #eea405; 
-
 }
 
 .sobremim{
@@ -276,3 +265,46 @@ fieldset{
     animation: surgir 2s;
 }
 
+.div_formacao{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.div_cursos{
+    background-color: #05131b;
+    border: 1px solid #eea405;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #cecccc;
+    font-family:"Quicksand", sans-serif;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.div_imagem_cursos{
+    margin-left: 37%;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #eea405;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+h6{
+    font-size: 20px;
+    color: #cecccc;
+    font-weight: 400;
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+}
+
+.certificados{
+    font-size: 20px;
+    color: #eea405;
+    font-weight: 400;
+    text-align: center;
+    font-family:"Quicksand", sans-serif;
+}
