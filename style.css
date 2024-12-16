@@ -13,13 +13,23 @@
         border-bottom: 2px solid;
         color: rgb(238, 164, 5);
     }
-
 }
 
+@keyframes selecao_certificados{
+    from{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(238, 164, 5);
+    }
+    to{
+        font-size: 25px;
+        border-bottom: 2px solid;
+        color: rgb(238, 164, 5);
+    }
+}
 
 @keyframes selecao_sobremim{
     from{
-        text-decoration: none;
         font-size: 40px;
         color: #cecccc;
     }
@@ -28,7 +38,16 @@
         border-bottom: 2px solid;
         color:#cecccc;
     }
+}
 
+@keyframes selecao_links{
+    from{
+        border-bottom: none;
+    }
+    to{
+        border-bottom: 2px solid;
+        color: rgb(238, 164, 5);
+    }
 }
 
 @keyframes surgir{
@@ -70,7 +89,6 @@
     }
 }
 
-
 body{
     background-image: url(Design\ sem\ nome\ 11.png);
     background-position: absolute;
@@ -79,16 +97,24 @@ body{
     margin: 0;
     padding: 0;
 }
+.a_links{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(238, 164, 5);
+    font-family: "Quicksand", sans-serif;
+}
+a:hover{
+    animation: selecao 2s forwards;
+}
 
-
-a{
+.a_formacao{
     text-decoration: none;
     font-size: 40px;
     color: rgb(238, 164, 5);
     font-family: "Quicksand", sans-serif;
 }
 
-a:hover{
+.a_formacao:hover{
     animation: selecao 0.1s forwards;
 }
 
@@ -96,6 +122,7 @@ a:hover{
     text-decoration: none;
     font-size: 40px;
     color: #cecccc;
+    font-family: "Quicksand", sans-serif;
 }
 
 .a_sobremim:hover{
@@ -266,12 +293,32 @@ fieldset{
 }
 
 .div_formacao{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
     margin-top: 3%;
 }
 
-.div_cursos{
+
+.div_tecnico{
+    grid-column: 1;
+    grid-row: 1;
+}
+.div_python{
+    grid-column: 2;
+    grid-row: 1;
+}
+.div_sistemas{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.div_sistemas img{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.div_tecnico, .div_python, .div_sistemas{
     background-color: #05131b;
     border: 1px solid #eea405;
     border-radius: 3px;
@@ -280,8 +327,6 @@ fieldset{
     font-family:"Quicksand", sans-serif;
     padding: 10px;
     margin: 20px;
-    text-align: center;
-    align-items: center;
 }
 
 .div_imagem_cursos{
@@ -301,10 +346,17 @@ h6{
     font-family:"Quicksand", sans-serif;
 }
 
+.section_texto{
+    text-align: center;
+}
 .certificados{
     font-size: 20px;
     color: #eea405;
     font-weight: 400;
     text-align: center;
     font-family:"Quicksand", sans-serif;
+}
+
+.certificados:hover{
+    animation: selecao_certificados forwards;
 }
