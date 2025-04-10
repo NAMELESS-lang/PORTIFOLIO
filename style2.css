@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+
+
+body{
+    background-image: url(Design\ sem\ nome\ 11.png);
+    font-size: 16px;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.div_nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.img_logo{
+    padding-left: 5rem;
+    width: 120px;
+    height: 120px;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.icone_menu{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+}
+.linhas{
+    background-color: rgb(238, 164, 5);
+    border-radius: 5px;
+    margin: 3px;
+    width: 80px;
+    height: 7px;
+}
+
+.link_branco{
+    font-size: 1.7rem;
+    color: white;
+}
+
+.link_amarelo{
+    font-size: 1.7rem;
+    color: rgb(238, 164, 5);
+}
+
+.link_amarelo:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.link_branco:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.div_boas_vindas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 95vw;
+}
+
+.div_contatos{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20rem;
+}
+
+p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.8rem;
+}
+
+a{
+    cursor: pointer;
+}

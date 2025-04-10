@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matheus Fiedler Colla</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
-<body>
-    <style>
-    a{
-        display: inline;
-    }
-    
-    a:hover{
-        background-color: brown;
-        color: wheat;
-        position: relative;
-        left: 5px;
-        right: 5px;
-    }</style>
-    <a id ='texto' href="pagina_inicial.html">Olá </a>
+<body id="corpo">
+    <div class="div_nav" id="div_nav">
+        <img class="img_logo" src="logo_matheus.png">
+        <a onclick="abrir_menu()" id="menu">
+            <div class="icone_menu">
+                <p class="linhas"></p>
+                <p class="linhas"></p>
+                <p class="linhas"></p>
+            </div>
+        </a>
+    </div>
+    <div class="div_boas_vindas" id="ola">
+        <p id="saudacao">Olá eu sou Matheus Fiedler Colla</p>
+    </div>
+    <script src="portifolio.js"></script>
 </body>
 </html>
