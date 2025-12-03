@@ -13,7 +13,7 @@ function abrir_menu(){
 
 function criar_menu(){
     const div_menu =  document.createElement("nav");
-    let links = ["CONTATO","SOBRE MIM","HARDSKILLS","FORMAÇÃO"];
+    let links = ["Contato","Sobre mim","Hardskills","Formação"];
     for(let i =0; i < links.length;i++){
          let link = document.createElement("a");
          link.textContent = links[i];
