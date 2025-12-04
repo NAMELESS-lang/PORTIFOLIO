@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste2.css">
+</head>
+<style>
+    .div1{
+        background-color: rgb(90, 5, 5);
+        margin: 10%;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .div2{
+        z-index: 1;
+        bottom: 55%;
+        right: 55%;
+        /* background-color: rgb(8, 71, 8); */
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+
+    .div3{
+        z-index: 0;
+        position: absolute;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        width: 200px;
+        top: 10%;
+        height: 200px; 
+        left: 10%;
+    }
+
+    .div4{
+        z-index: 0;
+        position: absolute;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        width: 100px;
+        top: 55%;
+        height: 100px; 
+        left: 55%;
+    }
+
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        gap: 20px;
+        text-transform: uppercase;
+    }
+
+    .detalhes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linhas{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .quadrado{
+        width: 25px;
+        height: 25px;
+        border: 2px solid blue;
+    }
+
+    .linha{
+        width: 400px;
+        height: 2px;
+        background-color: blue;
+    }
+
+    .borda_baixo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border: none;
+    }
+
+    .botao_skip{
+        position: relative;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        width: 60%;
+        height: 60%;
+        transform: rotate(45deg);
+    }
+
+    .botao_skip_2{
+        left: 50%;
+        position: relative;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        width: 30%;
+        height: 30%;
+        transform: rotate(45deg);
+    }
+
+</style>
+<body>
+    <div class="div1">
+        olá marilene
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+
+    <div class="titulo">
+        <div class="detalhes">
+            <div class="linhas">
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+            <div class="quadrado"></div>
+        </div>
+        <p>Texto</p>
+        <div class="detalhes">
+            <div class="quadrado"></div>
+            <div class="linhas">
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="borda_baixo">
+        <div class="linhas">
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+        <div class="quadrado"></div>
+        <div class="linhas">
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div> 
+    </div>
+
+
+    <button class="botoes">
+        <div class="botao_skip_2"></div>
+        <div class="botao_skip"></div>
+    </button>
+</body>
+</html>
