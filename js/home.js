@@ -48,53 +48,52 @@ function ocultar_contatos(){
 
 function mostrar_legenda(icone){
     if(icone == "git"){
-        // Obtém a div do ícone 
+        if(document.getElementById("legenda_git") != null){
+            return
+        }
+        // Obtem a ancora
         let div_git = document.getElementById("div_git")
 
-        // Cria parágrafo da legenda
-        let  legenda = document.createElement("p")
+        // Cria o paragrafo e define propriedades
+        let paragrafo = document.createElement("p")
+        paragrafo.id="legenda_git"
+        paragrafo.textContent="GitHub"
 
-        // Define o conteúdo
-        legenda.id = "paragrafo_legenda"
-        legenda.textContent = "GitHub"
-
-        // Adiciona legenda a div
-        div_git.appendChild(legenda)
+        // Adiciona a ancora o parágrafo
+        div_git.appendChild(paragrafo)
         return
 
     }else if (icone == "linkedin"){
-        // Obtém a div do ícone
+        if(document.getElementById("legenda_linkedin") != null){
+            return
+        }
+        // Obtem a ancora
         let div_linkedin = document.getElementById("div_linkedin")
 
-        // Cria parágrafo da legenda
-        let  legenda = document.createElement("p")
+        // Cria o paragrafo e define propriedades
+        let paragrafo = document.createElement("p")
+        paragrafo.id="legenda_linkedin"
+        paragrafo.textContent="Linkedin"
 
-        // Define o conteúdo
-        legenda.id = "paragrafo_legenda"
-        legenda.textContent = "Linkedin"
-
-        // Adiciona legenda a div
-        div_linkedin.appendChild(legenda)
+        // Adiciona a ancora o parágrafo
+        div_linkedin.appendChild(paragrafo)
         return
     }
 }
 
 function remover_legenda(icone){
      if(icone === "git"){
-        // Obtém os elementos
         let div_git = document.getElementById("div_git")
-        let paragrafo_legenda = document.getElementById("paragrafo_legenda")
-
-        // Remove o parágrafo da div
+        // Obtém os elementos
+        let paragrafo_legenda = document.getElementById("legenda_git")
         div_git.removeChild(paragrafo_legenda)
         return
     }else if (icone === "linkedin"){
-        // Obtém os elementos
         let div_linkedin = document.getElementById("div_linkedin")
-        let paragrafo_legenda = document.getElementById("paragrafo_legenda")
-
-        // Remove o parágrafo da div
+        // Obtém os elementos
+        let paragrafo_legenda = document.getElementById("legenda_linkedin")
         div_linkedin.removeChild(paragrafo_legenda)
+        return
     }else{
         return
     }
@@ -105,10 +104,10 @@ function remover_legenda(icone){
 let botao_contato = document.getElementById("contato")
 botao_contato.addEventListener("click",()=>mostrar_contatos())
 
-let icone_git = document.getElementById("git")
+let icone_git = document.getElementById("div_git")
 icone_git.addEventListener("mouseover",()=>mostrar_legenda("git"))
 icone_git.addEventListener("mouseleave",()=>remover_legenda("git"))
 
-let icone_linkedin = document.getElementById("linkedin")
+let icone_linkedin = document.getElementById("div_linkedin")
 icone_linkedin.addEventListener("mouseover",()=>mostrar_legenda("linkedin"))
 icone_linkedin.addEventListener("mouseleave",()=>remover_legenda("linkedin"))
