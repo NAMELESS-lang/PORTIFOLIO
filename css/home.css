@@ -38,16 +38,6 @@
     color: var(--cor_linhas);
 }
 
-.triangulo{
-    width: 0; 
-    height: 0; 
-}
-
-.triangulo_baixo{
-    width: 0; 
-    height: 0; 
-}
-
 .div_contatos{
     display: flex;
     justify-content: center;

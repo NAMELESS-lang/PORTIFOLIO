@@ -74,9 +74,67 @@
 }
 
 .conteudo_sobre{
-        border: 2px solid white;
-        height: 80%;
-        display: grid;
-        grid-column: 2;
-        grid-row: 2;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50% 50%;
+}
+
+.foto_perfil{
+    grid-row-start: 1; 
+    grid-row-end: 3;
+    grid-column: 1;
+    width: 95%;
+    height: 100%;
+}
+
+.comentarios_sobre_mim{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.ferramentas{
+    border: 1px solid var(--cor_linhas);
+    z-index: 1;
+    position: relative;
+    display: flex;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.ferramentas img{
+    width: 10%;
+}
+.adorno_1, .adorno_2, .adorno_3{
+    position: absolute;
+}
+
+.adorno_1{
+    z-index: 2;
+    bottom: 63%;
+    right: 81%;
+    width: 20%;
+    height: 40%;
+    border-top: 1px solid var(--cor_texto);
+    border-left: 1px solid var(--cor_texto);
+}
+
+.adorno_2{
+    z-index: 3;
+    height: 90%;
+    width: 20%;
+    left: 81%;
+    top: 12%;
+    border-right: 1px solid var(--cor_texto);
+    border-bottom: 1px solid var(--cor_texto);
+}
+
+.adorno_3{
+    z-index: 4;
+    border-right: 1px solid var(--cor_linhas);
+    border-bottom: 1px solid var(--cor_linhas);
+    width: 10%;
+    height: 30%;
+    left: 92%;
+    top: 74%;
 }
