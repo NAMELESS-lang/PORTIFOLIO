@@ -10,12 +10,6 @@
 }
 
 body{
-    /* background: linear-gradient(135deg,
-    #0d1218 0%,
-    #0b1b2a 35%,
-    #07131c 65%,
-    #05090d 100%
-    ); */
     background-image: url("../images/fundo.png");
     background-size: cover;        
     background-position: center;   
