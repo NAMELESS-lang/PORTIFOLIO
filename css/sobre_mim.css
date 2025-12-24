@@ -59,13 +59,13 @@
 }
 
 .linha1{
-    width: 70%;
+    width: 30%;
     height: 1px;
     background-color: var(--cor_linhas);
 }
 
 .linha2{
-    width: 90%;
+    width: 70%;
     height: 1px;
     background-color: var(--cor_linhas);
 }
