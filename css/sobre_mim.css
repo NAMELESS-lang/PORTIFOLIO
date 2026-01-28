@@ -23,14 +23,13 @@
     text-transform: uppercase;
     font-family: var(--fonte_titulos);
     color: var(--cor_texto);
-    gap: 5%;
 }
 
 .detalhes{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
@@ -54,7 +53,7 @@
 
 .quadrado{
     width: 5%;
-    height: 17%;
+    height: 100%;
     border: 1px solid var(--cor_linhas);
 }
 

@@ -3,6 +3,65 @@
     height: 80vh;
 }
 
+.header_formacao p{
+    font-weight: 200;
+    font-family: var(--fonte_titulos);
+}
+.titulo_formacao{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: var(--fonte_titulos);
+    color: var(--cor_texto);
+}
+
+.detalhes_formacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 3vh;
+}
+
+.linhas_esqueda_formacao{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.linhas_direita_formacao{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.quadrado_formacao{
+    width: 5%;
+    height: 100%;
+    border: 1px solid var(--cor_linhas);
+}
+
+.linha1_formacao{
+    width: 30%;
+    height: 1px;
+    background-color: var(--cor_linhas);
+}
+
+.linha2_formacao{
+    width: 70%;
+    height: 1px;
+    background-color: var(--cor_linhas);
+}
+
 .lista_cursos{
     display: flex;
     justify-content: center;
@@ -34,7 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 8%;
     height: 20%;
 }
 
@@ -49,6 +108,7 @@
     /* border: 2px solid white; */
     width: 50%;
     height: 45%;
+    left: 10%;
 }
 
 .botao_skip_direita{
@@ -58,6 +118,7 @@
     /* border: 2px solid white; */
     width: 50%;
     height: 45%;
+    right: 10%;
 }
 .botao_skip_direita{
     transform: rotate(45deg);
@@ -72,13 +133,22 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        height: 80%;
         gap: 1%;
     }
 
     .container_curso{
         width: 27%;
         height: 60%;
+    }
+
+    .header_formacao p{
+        font-size: 2.3em;
+    }
+
+    .quadrado_formacao{
+        width: 5%;
+        height: 70%;
     }
 }
 
