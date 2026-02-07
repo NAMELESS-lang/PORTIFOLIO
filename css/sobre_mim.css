@@ -91,6 +91,14 @@
 .comentarios_sobre_mim{
     grid-row: 1;
     grid-column: 2;
+    color: var(--cor_texto);
+    font-family: var(--fonte_texto);
+    font-weight: 200;
+    text-align: justify;
+}
+
+.comentarios_sobre_mim li{
+    margin-bottom: 5%;
 }
 
 .focado_em{
