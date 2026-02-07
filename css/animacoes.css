@@ -27,3 +27,27 @@
         transform: translateX(0px);
     }
 }
+
+@keyframes contornar_bordas{
+    0% {
+        border-bottom: 1px solid var(--cor_linhas);
+    }
+
+    25%{
+        border-bottom: 1px solid var(--cor_linhas);
+        border-right: 1px solid var(--cor_linhas);
+    }
+
+    75%{
+        border-bottom: 1px solid var(--cor_linhas);
+        border-right: 1px solid var(--cor_linhas);
+        border-top: 1px solid var(--cor_linhas);
+    }
+
+    100%{
+        border-bottom: 1px solid var(--cor_linhas);
+        border-right: 1px solid var(--cor_linhas);
+        border-top: 1px solid var(--cor_linhas);
+        border-left: 1px solid var(--cor_linhas);
+    }
+}

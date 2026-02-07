@@ -5,7 +5,7 @@
 :root{
     --cor_linhas: #dea526;
     --cor_texto: #ededed;
-    /* --fonte_titulos: "Arimo", sans-serif; */
+    --fonte_texto: "Arimo", sans-serif;
     --fonte_titulos: "Roboto Flex", sans-serif;
     --contorno_hover_cursos: #ffffff70;
 }

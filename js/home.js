@@ -53,6 +53,8 @@ function mostrar_legenda(icone){
         }
         // Obtem a ancora
         let div_git = document.getElementById("div_git")
+        div_git.style.border = "2px solid var(--cor_linhas)"
+        div_git.style.borderRadius = "5px"
 
         // Cria o paragrafo e define propriedades
         let paragrafo = document.createElement("p")
@@ -69,6 +71,8 @@ function mostrar_legenda(icone){
         }
         // Obtem a ancora
         let div_linkedin = document.getElementById("div_linkedin")
+        div_linkedin.style.border = "2px solid var(--cor_linhas)"
+        div_linkedin.style.borderRadius = "5px"
 
         // Cria o paragrafo e define propriedades
         let paragrafo = document.createElement("p")
@@ -86,13 +90,21 @@ function remover_legenda(icone){
         let div_git = document.getElementById("div_git")
         // Obtém os elementos
         let paragrafo_legenda = document.getElementById("legenda_git")
-        div_git.removeChild(paragrafo_legenda)
+        setTimeout(function(){ 
+          div_git.removeChild(paragrafo_legenda);
+          div_git.style.border = "none"
+          div_git.style.borderRadius = "none"
+        }, 300);
         return
     }else if (icone === "linkedin"){
         let div_linkedin = document.getElementById("div_linkedin")
         // Obtém os elementos
         let paragrafo_legenda = document.getElementById("legenda_linkedin")
-        div_linkedin.removeChild(paragrafo_legenda)
+        setTimeout(function(){ 
+          div_linkedin.removeChild(paragrafo_legenda);
+          div_linkedin.style.border = "none"
+          div_linkedin.style.borderRadius = "none"
+        }, 300);
         return
     }else{
         return
