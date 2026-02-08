@@ -1,6 +1,8 @@
 .container_formacao{
     width: 80%;
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo_formacao{
@@ -9,11 +11,11 @@
 }
 
 .lista_cursos{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 20%;
 }
 
 .container_curso{
