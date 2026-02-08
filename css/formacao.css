@@ -93,6 +93,7 @@
 
 .subtitulo_certificacoes{
     text-align: center;
+    margin-top: 5%;
     font-family: var(--fonte_titulos);
     color: var(--cor_texto);
     font-weight: 200;

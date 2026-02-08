@@ -1,0 +1,32 @@
+.container_projetos{
+    width: 80%;
+    height: 100vh;
+}
+
+.container_lista_projetos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+
+.container_projeto{
+    padding: 10px;
+    height: 90%;
+    width: 70%;
+    border: 1px solid var(--cor_linhas);
+}
+
+.container_projeto h3{
+    text-align: center;
+    font-family: var(--fonte_titulos);
+    font-weight: 200;
+    color: var(--cor_texto);
+}
+
+.container_lista_projetos p{
+    font-family: var(--fonte_texto);
+    color: var(--cor_texto);
+    font-weight: 200;
+    text-align: center;
+}
