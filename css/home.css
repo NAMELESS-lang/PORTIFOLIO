@@ -32,10 +32,10 @@
     cursor: pointer;
 }
 
-.cabecalho button{
+.link_contato{
     display: flex;
-    gap: 10px;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 /* CORREÇÃO: escopo do hover só no cabeçalho */
@@ -44,8 +44,16 @@
     color: var(--cor_linhas);
 }
 
+.triangulo{
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--cor_linhas);
+}
+
 .triangulo_baixo{
-    border: 1px solid var(--cor_linhas);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--cor_texto);
 }
 
 .div_contatos{
@@ -104,7 +112,7 @@
 }
 
 
-@media (min-width: 1440px){
+@media (max-width: 1920px){
     .container_home{
         min-height: 100vh;
         height: auto;
@@ -125,9 +133,16 @@
         font-size: clamp(1.5em, 2.2vw, 3em);
     }
 
+    .triangulo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid var(--cor_linhas);
+    }   
+
     .triangulo_baixo{
-        width: clamp(20px, 4vw, 40px);
-        height: auto;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid var(--cor_texto);
     }
 
     .div_contatos{
