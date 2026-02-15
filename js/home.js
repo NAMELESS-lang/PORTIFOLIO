@@ -111,6 +111,29 @@ function remover_legenda(icone){
     }
 }
 
+function criar_menu(){
+    let conteudo_principal = document.getElementById("main")
+    let barra_menu = document.createElement("article")
+    let barra_menu_horizontal = document.getElementById("barra_menu_horizontal")
+    let clone_barra_menu = barra_menu_horizontal.cloneNode(true)
+    let botao_fechar_menu = document.createElement("button")
+    let icone_fechar_menu = document.createElement("img")
+
+    barra_menu.id="barra_menu"
+    clone_barra_menu.id="barra_vertical"
+    clone_barra_menu.className="barra_vertical"
+    botao_fechar_menu.id = "botao_fechar_menu"
+    icone_fechar_menu.src="../images/botao_sair.svg"
+
+    botao_fechar_menu.appendChild(icone_fechar_menu)
+    barra_menu.appendChild(botao_fechar_menu)
+    barra_menu.appendChild(clone_barra_menu)
+    conteudo_principal.appendChild(barra_menu)
+        botao_fechar_menu.addEventListener("click", function(){
+        let barra_menu = document.getElementById("barra_menu")
+        barra_menu.remove()
+    })
+}
 
 
 let botao_contato = document.getElementById("contato")
@@ -123,3 +146,8 @@ icone_git.addEventListener("mouseleave",()=>remover_legenda("git"))
 let icone_linkedin = document.getElementById("div_linkedin")
 icone_linkedin.addEventListener("mouseover",()=>mostrar_legenda("linkedin"))
 icone_linkedin.addEventListener("mouseleave",()=>remover_legenda("linkedin"))
+
+let botao_menu = document.getElementById("botao_menu")
+if (botao_menu != null){
+    botao_menu.addEventListener("click", ()=> criar_menu())
+}

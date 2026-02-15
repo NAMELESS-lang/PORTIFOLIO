@@ -13,16 +13,19 @@
     <link rel="stylesheet" href="../css/projetos.css">
 </head>
 <body>
-    <main>
+    <main id="main">
         <section class="container_home" id="container_home">
-            <header class="cabecalho">
+            <header class="cabecalho" id="cabecalho">
                 <img src="../images/logo_matheus.png" alt="Imagem com uma logo escrito MFC, iniciais do nome">
-                <nav>
-                    <a class="link_contato" id="contato">Contato <div id="triangulo"class="triangulo_baixo"></div></button>
+                <nav id="barra_menu_horizontal">
+                    <a class="link_contato" id="contato">Contato <span id="triangulo"class="triangulo_baixo"></span></button>
                     <a href="">Sobre Mim</a>
                     <a href="">Formação</a>
                     <a href="">Projetos</a>
                 </nav>
+                <button id= "botao_menu" class="botao_menu">
+                    <img src="../images/menu.svg" alt="ícone de menu">
+                </button>
             </header>
 
             <!-- Div dos contatos -->

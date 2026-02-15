@@ -1,3 +1,8 @@
+
+main{
+    position: relative;
+    z-index: auto;
+}
 .container_home{
     background-image: url(../images/plano_fundo.png);
     background-size: cover;
@@ -111,6 +116,11 @@
     min-height: 100vh;
     height: auto;
 }
+
+#botao_menu{
+    display: none;
+}
+
 .cabecalho img{ 
     width: clamp(80px, 9vw, 220px);
     margin-left: clamp(20px, 4vw, 40px);
@@ -183,13 +193,214 @@
 }
 
 @media (max-width: 1024px){
+    .container_home{
+    min-height: 100vh;
+    height: auto;
+    }
+    
+    .cabecalho img{ 
+        width: clamp(80px, 15vw, 220px);
+        margin-left: clamp(20px, 4vw, 40px);
+    }
 
+    .cabecalho nav{
+        /* border: 1px solid red; */
+        max-width: 70vw;
+        width: auto;
+        gap: clamp(10px, 5vw, 60px);
+        right: clamp(20px, 4vw, 60px);
+    }
+
+    .cabecalho nav a{
+        font-size: clamp(1.5em, 2.7vw, 3.5em);
+        color: green;
+    }
+
+    .link_contato{
+        gap: clamp(5px, 1vw, 20px)
+    }
+
+    .triangulo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid var(--cor_linhas);
+    }   
+
+    .triangulo_baixo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid var(--cor_texto);
+    }
+
+    .div_contatos{
+        height: 15vh;
+        gap: clamp(20px, 2vw, 30px);
+    }
+
+    .div_contatos p{
+        font-size: clamp(1.5em, 1.8vw, 3em);
+    }
+
+    .div_contatos img{
+        width: clamp(20px, 15vw, 40px);
+    }
+
+    .saudacoes p{
+        font-size: clamp(2em, 3.6vw, 5em);
+    }
+
+    .links_redes_sociais{
+        margin-top: min(50%, 60px);
+        gap: 20%;
+    }
+
+    .div_redes_sociais{
+        gap: min(50%, 10%);
+        width: auto;
+        height: auto;
+        padding: 0.2% 2% 0.2% 2%;
+    }
+
+    .div_redes_sociais p {
+        font-size: clamp(1.5em, 2vw, 2em);
+    }
+
+    .div_redes_sociais img{
+        width: clamp(70px, 4vw, 100px);
+        height: auto;
+    }
 }
 
 @media (max-width: 768px){
+    .container_home{
+    min-height: 100vh;
+    height: auto;
+    }
 
+    article{
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        opacity: 0.5;
+    }
+
+    article button{
+        position: relative;
+        bottom: 25%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    article button img{
+        width: clamp(40px, 6vw, 80px);
+    }
+
+    #barra_menu_horizontal{
+        display: none;
+    }
+
+    #botao_menu{
+        display: block;
+    }
+
+    .cabecalho img{ 
+        width: clamp(80px, 20vw, 220px);
+        margin-left: clamp(20px, 4vw, 40px);
+    }
+
+    .cabecalho button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: clamp(20px, 5vw, 50px);
+    }
+
+    .cabecalho button img{
+        width: clamp(80px, 8vw, 220px);
+    }
+
+    .barra_vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barra_vertical{
+        gap: clamp(10px, 5vw, 60px);
+        right: clamp(20px, 4vw, 60px);
+    }
+
+    .barra_vertical a{
+        font-size: clamp(1.5em, 5vw, 10em);
+    }
+
+    .link_contato{
+        gap: clamp(5px, 1vw, 20px)
+    }
+
+    .triangulo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid var(--cor_linhas);
+    }   
+
+    .triangulo_baixo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid var(--cor_texto);
+    }
+
+    .div_contatos{
+        height: 20vh;
+        gap: clamp(20px, 2vw, 30px);
+    }
+
+    .div_contatos p{
+        font-size: clamp(1.2em, 1.3vw, 3em);
+    }
+
+    .div_contatos img{
+        width: clamp(20px, 10vw, 40px);
+    }
+
+    .saudacoes p{
+        font-size: clamp(2em, 2.8vw, 3.8em);
+    }
+
+    .links_redes_sociais{
+        margin-top: min(50%, 60px);
+        gap: 20%;
+    }
+
+    .div_redes_sociais{
+        gap: min(50%, 10%);
+        width: auto;
+        height: auto;
+        padding: 0.2% 2% 0.2% 2%;
+    }
+
+    .div_redes_sociais p {
+        font-size: clamp(1.5em, 2vw, 2em);
+    }
+
+    .div_redes_sociais img{
+        width: clamp(70px, 4vw, 100px);
+        height: auto;
+    }
 }
 
-@media (max-width: 480px){
-
+@media (max-width: 356px){
+    .cabecalho nav a{
+        font-size: clamp(1.5em, 1.6vw, 3em);
+        color: yellow;
+    }
 }
