@@ -121,9 +121,14 @@ function criar_menu(){
     let barra_menu = document.createElement("article")
     let barra_menu_horizontal = document.getElementById("barra_menu_horizontal")
     let clone_barra_menu = barra_menu_horizontal.cloneNode(true)
+    let div_contatos = document.getElementById("contatos")
     botao_contato = clone_barra_menu.querySelector("#contato")
     botao_contato.className= "link_contato"
     triangulo = botao_contato.querySelector("#triangulo")
+    if (div_contatos.hasChildNodes() != false){
+        triangulo.className = "triangulo"
+    }
+    
     botao_contato.addEventListener("click", ()=>mostrar_contatos(triangulo))
     let botao_fechar_menu = document.createElement("button")
     let icone_fechar_menu = document.createElement("img")
@@ -178,5 +183,9 @@ window.addEventListener("resize", function(){
         if (botao_menu.style.display == "block"){
             botao_menu.style.display = "none"
         }
+        let div_contatos = document.getElementById("contatos")
+        triangulo = this.document.getElementById("triangulo")
+            if (div_contatos.hasChildNodes() != false){
+                triangulo.className = "triangulo"
     }
-})
+}})
