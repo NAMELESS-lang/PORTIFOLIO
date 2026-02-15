@@ -1,4 +1,4 @@
-function mostrar_contatos(){
+function mostrar_contatos(triangulo){
     // Obtém a div de contatos
     let div_contatos = document.getElementById("contatos")
     
@@ -12,6 +12,12 @@ function mostrar_contatos(){
     if(document.getElementById('contatos').hasChildNodes()){
         let div_contatos = document.getElementById('contatos')
         div_contatos.innerText=""
+
+        if (triangulo != null){
+            triangulo.className = "triangulo_baixo"
+            return
+        }
+
 
         // Modifica o triângulo para o estado inicial
         let div_triangulo = document.getElementById("triangulo")
@@ -36,14 +42,13 @@ function mostrar_contatos(){
     let section_saudacoes = document.getElementById("saudacoes")
     container_home.insertBefore(div_contatos, section_saudacoes)
 
-
+    if (triangulo != null){
+        triangulo.className = "triangulo"
+        return
+    }
     // Outras modificações necessárias
     let div_triangulo = document.getElementById("triangulo")
     div_triangulo.className = "triangulo"
-}
-
-function ocultar_contatos(){
-
 }
 
 function mostrar_legenda(icone){
@@ -116,6 +121,10 @@ function criar_menu(){
     let barra_menu = document.createElement("article")
     let barra_menu_horizontal = document.getElementById("barra_menu_horizontal")
     let clone_barra_menu = barra_menu_horizontal.cloneNode(true)
+    botao_contato = clone_barra_menu.querySelector("#contato")
+    botao_contato.className= "link_contato"
+    triangulo = botao_contato.querySelector("#triangulo")
+    botao_contato.addEventListener("click", ()=>mostrar_contatos(triangulo))
     let botao_fechar_menu = document.createElement("button")
     let icone_fechar_menu = document.createElement("img")
 
@@ -128,10 +137,15 @@ function criar_menu(){
     botao_fechar_menu.appendChild(icone_fechar_menu)
     barra_menu.appendChild(botao_fechar_menu)
     barra_menu.appendChild(clone_barra_menu)
+    let overlay = document.getElementById("overlay_menu")
+    overlay.style.display = "block"
+
     conteudo_principal.appendChild(barra_menu)
         botao_fechar_menu.addEventListener("click", function(){
         let barra_menu = document.getElementById("barra_menu")
         barra_menu.remove()
+        let overlay = document.getElementById("overlay_menu")
+        overlay.style.display = "none"
     })
 }
 
@@ -151,3 +165,18 @@ let botao_menu = document.getElementById("botao_menu")
 if (botao_menu != null){
     botao_menu.addEventListener("click", ()=> criar_menu())
 }
+
+window.addEventListener("resize", function(){
+    if (this.window.innerWidth > 1024){
+        let barra_menu = this.document.getElementById("barra_menu")
+        let botao_menu = this.document.getElementById("botao_menu")
+        if (barra_menu != null){
+            barra_menu.remove()
+            let overlay = document.getElementById("overlay_menu")
+            overlay.style.display = "none"
+        }
+        if (botao_menu.style.display == "block"){
+            botao_menu.style.display = "none"
+        }
+    }
+})

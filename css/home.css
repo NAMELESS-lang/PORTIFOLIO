@@ -16,13 +16,13 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .cabecalho nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content: flex-end;
+    width: 80%;
 }
 
 .cabecalho a{
@@ -127,11 +127,8 @@ main{
 }
 
 .cabecalho nav{
-    /* border: 1px solid red; */
-    max-width: 50vw;
-    width: auto;
     gap: clamp(10px, 5vw, 60px);
-    right: clamp(20px, 4vw, 60px);
+    padding-right: clamp(10px, 5vw, 60px);
 }
 
 .cabecalho nav a{
@@ -155,7 +152,7 @@ main{
 }
 
 .div_contatos{
-    height: 13vh;
+    height: 15vh;
     gap: clamp(20px, 2vw, 30px);
 }
 
@@ -172,7 +169,7 @@ main{
 }
 
 .links_redes_sociais{
-    margin-top: min(50%, 50px);
+    margin-top: clamp(60px, 6vw, 200px);
     gap: 20%;
 }
 
@@ -193,27 +190,106 @@ main{
 }
 
 @media (max-width: 1024px){
+
+    .barra_vertical {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    }  
+
+    .barra_vertical a{
+        text-decoration: none;
+        color: var(--cor_texto);
+        font-family: var(--fonte_titulos);
+        font-weight: 200;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .barra_vertical a:hover{
+        color: var(--cor_linhas);
+    }
+
     .container_home{
     min-height: 100vh;
     height: auto;
     }
+
+    article{
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        background: radial-gradient(circle at 50% 50%,
+            rgb(16, 18, 23),
+            rgb(12, 24, 37),
+            rgb(10, 19, 26),
+            rgb(10, 11, 13),
+            rgb(11, 12, 14)
+            );
+        animation: surgir_menu;
+        animation-duration: 0.5s;
+        animation-iteration-count: initial;
+        border-left: 1px solid var(--cor_linhas);
+        z-index: 9999;
+    }
+
+    article button{
+        position: relative;
+        bottom: 15%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
     
+    article button img{
+        width: clamp(40px, 3vw, 80px);
+    }
+
+    #overlay_menu{
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.6); /* ou 1.0 se quiser esconder total */
+        z-index: 9998;
+        display: none;
+    }
+
+    #barra_menu_horizontal{
+        display: none;
+    }
+
+    #botao_menu{
+        display: block;
+    }
+
+    #botao_menu{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: clamp(20px, 5vw, 50px);
+    }
+
+    #botao_menu img{
+        width: clamp(80px, 8vw, 220px);
+    }
+
     .cabecalho img{ 
-        width: clamp(80px, 15vw, 220px);
+        width: clamp(80px, 14vw, 220px);
         margin-left: clamp(20px, 4vw, 40px);
     }
 
-    .cabecalho nav{
-        /* border: 1px solid red; */
-        max-width: 70vw;
-        width: auto;
-        gap: clamp(10px, 5vw, 60px);
-        right: clamp(20px, 4vw, 60px);
+    .barra_vertical{
+        gap: clamp(10px, 10vw, 100px);
     }
 
-    .cabecalho nav a{
-        font-size: clamp(1.5em, 2.7vw, 3.5em);
-        color: green;
+    .barra_vertical a{
+        font-size: clamp(1.5em, 3vw, 10em);
     }
 
     .link_contato{
@@ -272,28 +348,58 @@ main{
 }
 
 @media (max-width: 768px){
+
+    .barra_vertical {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    }   
+
+    .barra_vertical a{
+        text-decoration: none;
+        color: var(--cor_texto);
+        font-family: var(--fonte_titulos);
+        font-weight: 200;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .barra_vertical a:hover{
+        color: var(--cor_linhas);
+    }
     .container_home{
-    min-height: 100vh;
-    height: auto;
+        min-height: 100vh;
+        height: auto;
     }
 
     article{
-        width: 30%;
+        width: 40%;
         height: 100vh;
         position: fixed;
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
         top: 0;
         right: 0;
-        background-color: transparent;
-        opacity: 0.5;
+        background: radial-gradient(circle at 50% 50%,
+            rgb(16, 18, 23),
+            rgb(12, 24, 37),
+            rgb(10, 19, 26),
+            rgb(10, 11, 13),
+            rgb(11, 12, 14)
+            );
+        animation: surgir_menu;
+        animation-duration: 0.5s;
+        animation-iteration-count: initial;
+        border-left: 1px solid var(--cor_linhas);
+        z-index: 9999;
     }
 
     article button{
         position: relative;
-        bottom: 25%;
+        bottom: 15%;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -301,6 +407,14 @@ main{
     
     article button img{
         width: clamp(40px, 6vw, 80px);
+    }
+
+    #overlay_menu{
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.9); /* ou 1.0 se quiser esconder total */
+        z-index: 9998;
+        display: none;
     }
 
     #barra_menu_horizontal{
@@ -316,35 +430,23 @@ main{
         margin-left: clamp(20px, 4vw, 40px);
     }
 
-    .cabecalho button{
+    #botao_menu{
         background-color: transparent;
         border: none;
         cursor: pointer;
         margin-right: clamp(20px, 5vw, 50px);
     }
 
-    .cabecalho button img{
+    #botao_menu img{
         width: clamp(80px, 8vw, 220px);
     }
 
     .barra_vertical{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .barra_vertical{
-        gap: clamp(10px, 5vw, 60px);
-        right: clamp(20px, 4vw, 60px);
+        gap: clamp(10px, 10vw, 100px);
     }
 
     .barra_vertical a{
         font-size: clamp(1.5em, 5vw, 10em);
-    }
-
-    .link_contato{
-        gap: clamp(5px, 1vw, 20px)
     }
 
     .triangulo{
@@ -360,7 +462,7 @@ main{
     }
 
     .div_contatos{
-        height: 20vh;
+        height: 17vh;
         gap: clamp(20px, 2vw, 30px);
     }
 

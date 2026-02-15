@@ -51,3 +51,13 @@
         border-left: 1px solid var(--cor_linhas);
     }
 }
+
+@keyframes surgir_menu{
+    from{
+        transform: translateX(40px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
