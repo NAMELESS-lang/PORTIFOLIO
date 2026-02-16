@@ -309,7 +309,7 @@ main{
     }
 
     .div_contatos{
-        height: 15vh;
+        height: 12vh;
         gap: clamp(20px, 2vw, 30px);
     }
 
@@ -322,11 +322,12 @@ main{
     }
 
     .saudacoes p{
-        font-size: clamp(2em, 3.6vw, 5em);
+        font-size: clamp(2em, 4vw, 9em);
+        color:red;
     }
 
     .links_redes_sociais{
-        margin-top: min(50%, 60px);
+        margin-top: clamp(20px, 4vw, 100px);
         gap: 20%;
     }
 
@@ -345,6 +346,166 @@ main{
         width: clamp(70px, 4vw, 100px);
         height: auto;
     }
+}
+@media (max-width: 1024px) and (orientation:portrait){
+    .container_home{
+        height: 40dvh;
+    }
+    .barra_vertical {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    }  
+
+    .barra_vertical a{
+        text-decoration: none;
+        color: var(--cor_texto);
+        font-family: var(--fonte_titulos);
+        font-weight: 200;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .barra_vertical a:hover{
+        color: var(--cor_linhas);
+    }
+
+    .container_home{
+    min-height: 100vh;
+    height: auto;
+    }
+
+    article{
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        top: 0;
+        right: 0;
+        background: radial-gradient(circle at 50% 50%,
+            rgb(16, 18, 23),
+            rgb(12, 24, 37),
+            rgb(10, 19, 26),
+            rgb(10, 11, 13),
+            rgb(11, 12, 14)
+            );
+        animation: surgir_menu;
+        animation-duration: 0.5s;
+        animation-iteration-count: initial;
+        border-left: 1px solid var(--cor_linhas);
+        z-index: 9999;
+    }
+
+    article button{
+        position: relative;
+        bottom: 10%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    article button img{
+        width: clamp(40px, 3vw, 80px);
+    }
+
+    #overlay_menu{
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,.6); /* ou 1.0 se quiser esconder total */
+        z-index: 9998;
+        display: none;
+    }
+
+    #barra_menu_horizontal{
+        display: none;
+    }
+
+    #botao_menu{
+        display: block;
+    }
+
+    #botao_menu{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: clamp(20px, 5vw, 50px);
+    }
+
+    #botao_menu img{
+        width: clamp(80px, 8vw, 220px);
+    }
+
+    .cabecalho img{ 
+        width: clamp(80px, 20vw, 220px);
+        margin-left: clamp(20px, 4vw, 40px);
+    }
+
+    .barra_vertical{
+        gap: clamp(10px, 8vw, 100px);
+    }
+
+    .barra_vertical a{
+        font-size: clamp(1.5em, 3vw, 10em);
+    }
+
+    .link_contato{
+        gap: clamp(5px, 1vw, 20px)
+    }
+
+    .triangulo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid var(--cor_linhas);
+    }   
+
+    .triangulo_baixo{
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid var(--cor_texto);
+    }
+
+    .div_contatos{
+        height: 15vh;
+        gap: clamp(20px, 2vw, 30px);
+    }
+
+    .div_contatos p{
+        font-size: clamp(1.5em, 1.8vw, 3em);
+    }
+
+    .div_contatos img{
+        width: clamp(20px, 15vw, 40px);
+    }
+
+    .saudacoes p{
+        font-size: clamp(2em, 7vw, 9em);
+        color:blue;
+    }
+
+    .links_redes_sociais{
+        margin-top: clamp(20px, 4vw, 100px);
+        gap: 20%;
+    }
+
+    .div_redes_sociais{
+        gap: min(50%, 10%);
+        width: auto;
+        height: auto;
+        padding: 0.2% 2% 0.2% 2%;
+    }
+
+    .div_redes_sociais p {
+        font-size: clamp(1.5em, 2vw, 2em);
+    }
+
+    .div_redes_sociais img{
+        width: clamp(70px, 12vw, 150px);
+    }
+
 }
 
 @media (max-width: 768px){
