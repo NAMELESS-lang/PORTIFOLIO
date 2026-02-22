@@ -124,11 +124,11 @@
     }
 
     .div_contatos p{
-        font-size: clamp(1em, 1vw, 3em);
+        font-size: clamp(1.2em, 2vw, 3em);
     }
 
     .div_contatos img{
-        width: clamp(20px, 10vw, 40px);
+        width: clamp(20px, 9vw, 40px);
     }
 
     .saudacoes p{
