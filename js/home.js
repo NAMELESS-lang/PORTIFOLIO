@@ -5,8 +5,16 @@ function mostrar_contatos(triangulo){
     // Cria os elementos que irão conter as informações
     let p_telefone = document.createElement("p")
     let p_email = document.createElement("p")
+    let div_telefone = document.createElement("div")
+    let div_email = document.createElement("div")
     let icone_telefone = document.createElement("img")
     let icone_email = document.createElement("img")
+    div_telefone.appendChild(icone_telefone)
+    div_telefone.appendChild(p_telefone)
+    div_email.appendChild(icone_email)
+    div_email.appendChild(p_email)
+    div_email.className="container_contato"
+    div_telefone.className="container_contato"
 
     // Se a div de contato possuir conteúdo, remove ele
     if(document.getElementById('contatos').hasChildNodes()){
@@ -30,10 +38,8 @@ function mostrar_contatos(triangulo){
     p_email.textContent = "matheusfiedlercolla@gmail.com"
     icone_telefone.src = "../images/icone_telefone.png"
     icone_email.src = "../images/icone_email.png"
-    div_contatos.appendChild(icone_telefone)
-    div_contatos.appendChild(p_telefone)
-    div_contatos.appendChild(icone_email)
-    div_contatos.appendChild(p_email)
+    div_contatos.appendChild(div_telefone)
+    div_contatos.appendChild(div_email)
     div_contatos.id = "contatos"
     div_contatos.className = "div_contatos"
 

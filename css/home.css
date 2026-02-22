@@ -68,6 +68,12 @@ main{
     animation-duration: 1s;
 }
 
+.container_contato{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .saudacoes{
     display: flex;
     justify-content: center;
@@ -439,7 +445,7 @@ main{
         width: clamp(80px, 8vw, 220px);
     }
 
-    .cabecalho img{ 
+    .cabecalho img{
         width: clamp(80px, 20vw, 220px);
         margin-left: clamp(20px, 4vw, 40px);
     }
@@ -449,7 +455,7 @@ main{
     }
 
     .barra_vertical a{
-        font-size: clamp(1.5em, 3vw, 10em);
+        font-size: clamp(1.8em, 7vw, 10em);
     }
 
     .link_contato{
@@ -469,16 +475,20 @@ main{
     }
 
     .div_contatos{
-        height: 15vh;
-        gap: clamp(20px, 2vw, 30px);
+        height: 19vh;
+        gap: clamp(20px, 3vw, 30px);
+    }
+
+    .container_contato{
+        gap: clamp(20px, 3vw, 60px);
     }
 
     .div_contatos p{
-        font-size: clamp(1.5em, 1.8vw, 3em);
+        font-size: clamp(1.4em, 3.5vw, 3em);
     }
 
     .div_contatos img{
-        width: clamp(20px, 15vw, 40px);
+        width: clamp(20px, 19vw, 60px);
     }
 
     .saudacoes p{
@@ -499,7 +509,7 @@ main{
     }
 
     .div_redes_sociais p {
-        font-size: clamp(1.5em, 2vw, 2em);
+        font-size: clamp(1.5em, 5vw, 3em);
     }
 
     .div_redes_sociais img{
@@ -628,15 +638,16 @@ main{
     }
 
     .div_contatos p{
-        font-size: clamp(1.2em, 1.3vw, 3em);
+        font-size: clamp(1.2em, 3.5vw, 3em);
     }
 
     .div_contatos img{
-        width: clamp(20px, 10vw, 40px);
+        width: clamp(20px, 12vw, 60px);
     }
 
     .saudacoes p{
-        font-size: clamp(1.5em, 3vw, 3.8em);
+        font-size: clamp(1.5em, 5vw, 3.8em);
+        color:cyan;
     }
 
     .links_redes_sociais{
@@ -652,11 +663,11 @@ main{
     }
 
     .div_redes_sociais p {
-        font-size: clamp(1.5em, 2vw, 2em);
+        font-size: clamp(2em, 2.5vw, 3em);
     }
 
     .div_redes_sociais img{
-        width: clamp(70px, 4vw, 100px);
+        width: clamp(70px, 12vw, 100px);
         height: auto;
     }
 }
@@ -686,6 +697,11 @@ main{
     .barra_vertical a:hover{
         color: var(--cor_linhas);
     }
+
+    .container_contato{
+        gap: clamp(30px, 3vw, 60px);
+    }
+
     .container_home{
         min-height: 100vh;
         height: auto;
@@ -777,12 +793,12 @@ main{
     }
 
     .div_contatos{
-        height: 17vh;
-        gap: clamp(20px, 2vw, 30px);
+        height: 20vh;
+        flex-direction: column;
     }
 
     .div_contatos p{
-        font-size: clamp(1.2em, 1.3vw, 3em);
+        font-size: clamp(1em, 1vw, 3em);
     }
 
     .div_contatos img{
@@ -791,6 +807,7 @@ main{
 
     .saudacoes p{
         font-size: clamp(1.7em, 1vw, 3.8em);
+        color: yellow;
     }
 
     .links_redes_sociais{
@@ -800,8 +817,6 @@ main{
 
     .div_redes_sociais{
         gap: min(50%, 10%);
-        width: auto;
-        height: auto;
         padding: 0.2% 2% 0.2% 2%;
     }
 
