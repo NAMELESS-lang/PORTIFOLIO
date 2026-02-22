@@ -136,22 +136,17 @@
         color: yellow;
     }
 
-    .links_redes_sociais{
-        margin-top: min(50%, 60px);
-        gap: 20%;
-    }
-
     .div_redes_sociais{
-        gap: min(50%, 10%);
-        padding: 0.2% 2% 0.2% 2%;
+        height: 10vh;
+        flex-direction: column;
     }
 
     .div_redes_sociais p {
-        font-size: clamp(1.5em, 2vw, 2em);
+        font-size: clamp(1.5em, 1.5vw, 2em);
     }
 
     .div_redes_sociais img{
-        width: clamp(70px, 4vw, 100px);
+        width: clamp(60px, 4vw, 100px);
         height: auto;
     }
 }

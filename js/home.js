@@ -59,10 +59,10 @@ function mostrar_contatos(triangulo){
 
 function mostrar_legenda(icone){
     if(icone == "git"){
-        if(document.getElementById("legenda_git") != null){
+        if ((window.innerWidth <= 1024 && window.matchMedia("(orientation: portrait)").matches) || document.getElementById("legenda_git") != null){
             return
         }
-        // Obtem a ancora
+
         let div_git = document.getElementById("div_git")
         div_git.style.border = "2px solid var(--cor_linhas)"
         div_git.style.borderRadius = "5px"
@@ -77,10 +77,10 @@ function mostrar_legenda(icone){
         return
 
     }else if (icone == "linkedin"){
-        if(document.getElementById("legenda_linkedin") != null){
+        if ((window.innerWidth <= 1024 && window.matchMedia("(orientation: portrait)").matches) || document.getElementById("legenda_linkedin") != null){
             return
         }
-        // Obtem a ancora
+
         let div_linkedin = document.getElementById("div_linkedin")
         div_linkedin.style.border = "2px solid var(--cor_linhas)"
         div_linkedin.style.borderRadius = "5px"
