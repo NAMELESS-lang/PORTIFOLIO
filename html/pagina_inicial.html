@@ -2,12 +2,19 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Home</title>
     <link rel="stylesheet" href="../css/animacoes.css">
     <link rel="stylesheet" href="../css/configuracoes_globais.css">
+
+    <!-- Configs da home e media queries -->
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/desktop/home_desktop.css">
+    <link rel="stylesheet" href="../css/notebooks/home_notebook.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="../css/others/home_tablets.css" media="(max-width: 1024px) and (orientation:portrait), (max-width: 768px)">
+    <link rel="stylesheet" href="../css/mobile/home_mobile.css" media="(max-width: 480px)">
+
+
     <link rel="stylesheet" href="../css/sobre_mim.css">
     <link rel="stylesheet" href="../css/formacao.css">
     <link rel="stylesheet" href="../css/projetos.css">
@@ -18,7 +25,7 @@
             <header class="cabecalho" id="cabecalho">
                 <img src="../images/logo_matheus.png" alt="Imagem com uma logo escrito MFC, iniciais do nome">
                 <nav id="barra_menu_horizontal">
-                    <a class="link_contato" id="contato">Contato <span id="triangulo"class="triangulo_baixo"></span></button>
+                    <a class="link_contato" id="contato">Contato <span id="triangulo"class="triangulo_baixo"></span></a>
                     <a id="sobre_mim" href="#container_sobre">Sobre Mim</a>
                     <a id="formacao" href="#container_formacao">Formação</a>
                     <a id="projetos" href="#container_projetos">Projetos</a>
@@ -35,7 +42,7 @@
 
             <div class="saudacoes" id="saudacoes">
                 <p>Olá, meu nome é <span>Matheus Fiedler Colla</span></p>
-                <p style="margin-left: 10%;">Técnico em <span>Infraestrutura</span> e <span>Suporte</span> de TI</p>
+                <p>Técnico em <span>Infraestrutura</span> e <span>Suporte</span> de TI</p>
             </div>
             
                 <!-- Div com as redes sociais -->
