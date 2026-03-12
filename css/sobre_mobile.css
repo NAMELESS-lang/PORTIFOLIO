@@ -38,6 +38,8 @@
 
     .comentarios_sobre_mim{
         margin-top: 20px;
+        width: 95%;
+        font-size: clamp(1.5em, 2vw, 3em);
     }
 
     .ferramentas{
@@ -112,10 +114,9 @@
 
     .comentarios_sobre_mim{
         text-align: justify;
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 95%;
         margin-top: 20px;
-        /* border: 2px solid red; */
+        font-size: clamp(1em, 2vw, 2em);
     }
 
     .focado_em{
