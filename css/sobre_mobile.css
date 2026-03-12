@@ -1,4 +1,14 @@
-@media (max-width: 480px){
+@media (max-width: 1100px) and (orientation: portrait){
+    .ferramentas_mobile{
+        display: none;
+    }
+
+    .conteudo_sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .container_sobre{
         width: 100%;
@@ -10,16 +20,57 @@
     }
 
     .header_sobre h3{
-        text-align: left;
+        text-align: center;
+        font-size: clamp(30px, 2vw, 50px);
+    }
+
+    .detalhes{
+        width: 30%;
+    }
+
+    .linha1{
+     width: 60%;   
+    }
+
+    .linhas_esquerda, .linha_direita, .linha2{
+        width: 100%;
+    }
+
+    .comentarios_sobre_mim{
+        margin-top: 20px;
+    }
+
+    .ferramentas{
+        width: 90%;
+        height: 60vh;
+    }
+
+}
+
+@media (max-width: 480px){
+    .ferramentas{
+        display: none;
+    }
+    .container_sobre{
+        width: 100%;
+    }
+
+    .header_sobre{
+        height: 13vh;
+        /* border: 2px solid red; */
+    }
+
+    .header_sobre h3{
+        text-align: center;
+        font-size: clamp(20px, 1vw, 40px);
     }
 
     .detalhes{
         width: 25%;
-        /* border: 2px solid green; */
     }
 
     .linha1{
-     width: 80%;   
+     width: 60%;   
     }
 
     .linhas_esquerda, .linha_direita, .linha2{
@@ -42,6 +93,10 @@
         border: none;
     }
 
+    .quadrado{
+        width: 20%;
+    }
+
     .adorno_1, .adorno_2, .adorno_3{
         display: none;
     }
@@ -51,6 +106,8 @@
         width: 90%;
         height: 100vh;
         align-items: center;
+        gap: 0;
+        justify-content: space-around;
     }
 
     .comentarios_sobre_mim{
@@ -63,10 +120,11 @@
 
     .focado_em{
         text-align: center;
+        color: var(--cor_linhas);
     }
 
     .container_ferramenta_mobile{
-        width: 75%;
+        width: 60%;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -74,17 +132,20 @@
     }
 
     .container_ferramenta_mobile img{
-        width: 30px;
-        height: 30px;
+        width: clamp(6em, 20vw, 20em);
+        height: clamp(6em, 20vw, 20em);
     }
 
     .container_ferramenta_mobile p{
         text-align: center;
+        color: var(--cor_texto);
+        font-family: var(--fonte_texto);
+        font-size: clamp(1.5em, 2vw, 5em);
     }
 
     .seta_esquerda{
-        width: 40px;
-        height: 40px;
+        width: clamp(3em, 7vw, 10em);
+        height: clamp(3em, 7vw, 10em);
         transform: rotate(45deg);
         border: none;
         border-left: 2px solid var(--cor_texto);
@@ -95,8 +156,8 @@
     }
 
     .seta_direita{
-        width: 40px;
-        height: 40px;
+        width: clamp(3em, 7vw, 10em);
+        height: clamp(3em, 7vw, 10em);
         transform: rotate(45deg);
         border: none;
         border-top: 2px solid var(--cor_texto);
