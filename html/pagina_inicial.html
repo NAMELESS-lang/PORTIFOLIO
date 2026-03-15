@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Matheus Fiedler Colla</title>
+
     <link rel="stylesheet" href="../css/animacoes.css">
     <link rel="stylesheet" href="../css/configuracoes_globais.css">
 
@@ -11,53 +12,69 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/desktop/home_desktop.css">
     <link rel="stylesheet" href="../css/notebooks/home_notebook.css" media="(max-width: 1024px)">
-    <link rel="stylesheet" href="../css/others/home_tablets.css" media="(max-width: 1024px) and (orientation:portrait), (max-width: 768px)">
+    <link rel="stylesheet" href="../css/others/home_tablets.css" media="(max-width: 1024px) and (orientation: portrait), (max-width: 768px)">
     <link rel="stylesheet" href="../css/mobile/home_mobile.css" media="(max-width: 480px)">
 
     <!-- Configs sobre mim e media queries -->
     <link rel="stylesheet" href="../css/sobre_mim.css">
-    <link rel="stylesheet" href="../css/others/sobre_tablets.css" media="(max-width: 1024px) and (orientation:portrait)">
+    <link rel="stylesheet" href="../css/others/sobre_tablets.css" media="(max-width: 1024px) and (orientation: portrait)">
     <link rel="stylesheet" href="../css/mobile/sobre_mobile.css" media="(max-width: 480px)">
 
     <link rel="stylesheet" href="../css/formacao.css">
     <link rel="stylesheet" href="../css/projetos.css">
-
 </head>
 <body>
     <main id="main">
         <section class="container_home" id="container_home">
             <header class="cabecalho" id="cabecalho">
-                <img src="../images/logo_matheus.png" alt="Imagem com uma logo escrito MFC, iniciais do nome">
-                <nav id="barra_menu_horizontal">
-                    <a class="link_contato" id="contato">Contato <span id="triangulo"class="triangulo_baixo"></span></a>
+                <img src="../images/logo_matheus.png" alt="Logotipo com as iniciais MFC, de Matheus Fiedler Colla">
+
+                <nav id="barra_menu_horizontal" aria-label="Menu principal">
+                    <a class="link_contato" id="contato" href="#contatos">
+                        Contato <span id="triangulo" class="triangulo_baixo" aria-hidden="true"></span>
+                    </a>
                     <a id="sobre_mim" href="#container_sobre">Sobre Mim</a>
                     <a id="formacao" href="#container_formacao">Formação</a>
                     <a id="projetos" href="#container_projetos">Projetos</a>
                 </nav>
-                <div id="overlay_menu"></div>
-                <button id= "botao_menu" class="botao_menu">
-                    <img src="../images/menu.svg" alt="ícone de menu">
+
+                <div id="overlay_menu" aria-hidden="true"></div>
+
+                <button id="botao_menu" class="botao_menu" type="button" aria-label="Abrir menu">
+                    <img src="../images/menu.svg" alt="Ícone de menu">
                 </button>
             </header>
 
             <!-- Div dos contatos -->
             <div id="contatos" class="div_contatos"></div>
 
-
             <div class="saudacoes" id="saudacoes">
                 <p>Olá, meu nome é <span>Matheus Fiedler Colla</span></p>
                 <p>Técnico em <span>Infraestrutura</span> e <span>Suporte</span> de TI</p>
             </div>
-            
-                <!-- Div com as redes sociais -->
-                <div class="links_redes_sociais">
-                    <a style="text-decoration: none;" href ="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do" id="div_linkedin" class="div_redes_sociais">
-                        <img id="linkedin" src="../images/linkedin.png" alt="ícone do linkedin">
-                    </a>
-                    <a style="text-decoration: none;" href="https://github.com/NAMELESS-lang?tab=repositories" id="div_git" class="div_redes_sociais">
-                        <img id="git" src="../images/git.png" alt="ícone do github">
-                    </a>
-                </div>
+
+            <!-- Div com as redes sociais -->
+            <div class="links_redes_sociais">
+                <a style="text-decoration: none;"
+                   href="https://sig.iffarroupilha.edu.br/sigaa/verTelaLogin.do"
+                   id="div_linkedin"
+                   class="div_redes_sociais"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Acessar link externo">
+                    <img id="linkedin" src="../images/linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+
+                <a style="text-decoration: none;"
+                   href="https://github.com/NAMELESS-lang?tab=repositories"
+                   id="div_git"
+                   class="div_redes_sociais"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Acessar perfil no GitHub">
+                    <img id="git" src="../images/git.png" alt="Ícone do GitHub">
+                </a>
+            </div>
         </section>
 
         <section id="container_sobre" class="container_sobre">
@@ -70,7 +87,9 @@
                         </div>
                         <div class="quadrado"></div>
                     </div>
+
                     <h3>Sobre Mim</h3>
+
                     <div class="detalhes">
                         <div class="quadrado"></div>
                         <div class="linhas_direita">
@@ -80,65 +99,84 @@
                     </div>
                 </div>
             </header>
+
             <section class="conteudo_sobre">
-                <img  class="foto_perfil">
+                <!-- Adicione o src correto da sua foto -->
+                <img class="foto_perfil" alt="Foto de perfil de Matheus Fiedler Colla">
+
                 <p class="comentarios_sobre_mim">
-                   Olá meu nome é Matheus, e busco trabalho na área de infraestrutura e suporte em TI. Não possuo experiência comprovada, 
-                   mas com esse portifólio, e os projetos que apresento no mesmo, consigo demostrar o conhecimento que possuo na área.
+                    Olá, meu nome é Matheus e busco trabalho na área de infraestrutura e suporte em TI.
+                    Não possuo experiência comprovada, mas, com este portfólio e os projetos que apresento nele,
+                    consigo demonstrar o conhecimento que possuo na área.
                 </p>
+
                 <h2 class="focado_em">
-                   Ferramentas e Sistemas Operacionais que conheço 
+                    Ferramentas e Sistemas Operacionais que conheço
                 </h2>
+
                 <div class="ferramentas">
                     <div class="container_ferramenta">
-                        <img src="../images/docker.png" alt="" width="45%" height="45%">
+                        <img src="../images/docker.png" alt="Logotipo do Docker" width="45%" height="45%" loading="lazy">
                         <p>Docker</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/windows.png" alt="" width="45%" height="45%">
+                        <img src="../images/windows.png" alt="Logotipo do Windows" width="45%" height="45%" loading="lazy">
                         <p>Windows</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/debian.png" alt="" width="45%" height="45%">
+                        <img src="../images/debian.png" alt="Logotipo do Debian" width="45%" height="45%" loading="lazy">
                         <p>Debian</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/ubuntu.png" alt="" width="45%" height="45%">
+                        <img src="../images/ubuntu.png" alt="Logotipo do Ubuntu" width="45%" height="45%" loading="lazy">
                         <p>Ubuntu</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/proxmox.png" alt="" width="45%" height="45%">
+                        <img src="../images/proxmox.png" alt="Logotipo do Proxmox" width="45%" height="45%" loading="lazy">
                         <p>Proxmox</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/zabbix.png" alt="" width="45%" height="45%">
+                        <img src="../images/zabbix.png" alt="Logotipo do Zabbix" width="45%" height="45%" loading="lazy">
                         <p>Zabbix</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/nginx.png" alt="" width="45%" height="45%">
+                        <img src="../images/nginx.png" alt="Logotipo do Nginx" width="45%" height="45%" loading="lazy">
                         <p>Nginx</p>
                     </div>
+
                     <div class="container_ferramenta">
-                        <img src="../images/apache.jpg" alt="" width="45%" height="45%">
+                        <img src="../images/apache.jpg" alt="Logotipo do Apache" width="45%" height="45%" loading="lazy">
                         <p>Apache</p>
                     </div>
+
                     <div class="adorno_1"></div>
                     <div class="adorno_2"></div>
                     <div class="adorno_3"></div>
                 </div>
+
                 <div class="ferramentas_mobile">
-                    <button id="seta_esquerda" class="seta_esquerda"></button>
+                    <button id="seta_esquerda" class="seta_esquerda" type="button" aria-label="Ferramenta anterior"></button>
+
                     <div class="container_ferramenta_mobile">
-                        <img id="imagem_ferramenta_mobile" src="../images/apache.jpg" alt="">
+                        <img id="imagem_ferramenta_mobile"
+                             src="../images/apache.jpg"
+                             alt="Logotipo da ferramenta exibida no carrossel"
+                             loading="lazy">
                         <p id="paragrafo_ferramenta_mobile">Apache</p>
                     </div>
-                    <button id="seta_direita" class="seta_direita"></button>
+
+                    <button id="seta_direita" class="seta_direita" type="button" aria-label="Próxima ferramenta"></button>
                 </div>
             </section>
         </section>
 
-
-        <!-- <section id="container_formacao" class="container_formacao">
+        <section id="container_formacao" class="container_formacao">
             <header class="header_sobre">
                 <div class="titulo">
                     <div class="detalhes">
@@ -148,7 +186,9 @@
                         </div>
                         <div class="quadrado"></div>
                     </div>
+
                     <h2 class="titulo_formacao">Formação</h2>
+
                     <div class="detalhes">
                         <div class="quadrado"></div>
                         <div class="linhas_direita">
@@ -158,39 +198,47 @@
                     </div>
                 </div>
             </header>
+
             <section class="lista_cursos" style="gap: 15%;">
                 <div class="container_curso">
-                    <img src="../images/tecnico_ti.png" width="20%" height="45%">
-                    <p>Técnico em informática </br> Realizado no período de 2023 à 2024</p>
+                    <img src="../images/tecnico_ti.png" alt="Imagem representando o curso técnico em informática" width="20%" height="45%" loading="lazy">
+                    <p>Técnico em Informática <br> Realizado no período de 2023 a 2024</p>
+
                     <h4>Conceitos Estudados</h4>
                     <ul class="conceitos_estudados">
                         <li>Montagem e manutenção de computadores</li>
                         <li>Criação e configuração de redes</li>
                         <li>Projeto e implementação de banco de dados</li>
-                        <li>Programação WEB</li>
+                        <li>Programação web</li>
                     </ul>
+
                     <a href="../images/como_deve_ficar.png">Certificado</a>
                 </div>
+
                 <div class="container_curso">
-                    <img src="../images/w.png" width="45%" height="40%">
-                    <p>Graduação Sistemas Para Internet </br> Realizado no período de 2025 à 2027</p>
+                    <img src="../images/w.png" alt="Imagem representando a graduação em Sistemas para Internet" width="45%" height="40%" loading="lazy">
+                    <p>Graduação em Sistemas para Internet <br> Realizada no período de 2025 a 2027</p>
+
                     <h4>Conceitos Estudados</h4>
                     <ul class="conceitos_estudados">
                         <li>Montagem e manutenção de hardware</li>
                         <li>Criação e configuração de redes</li>
                     </ul>
+
                     <a href="../images/como_deve_ficar.png">Certificado</a>
                 </div>
             </section>
+
             <h3 class="subtitulo_certificacoes">Certificações</h3>
+
             <section class="lista_cursos">
                 <div class="container_curso">
-                    <img src="../images/python.png" alt="" height="40%" width="40%">
-                    <p>Curso em Programação Python <br> Realizado na Escola de Comunicações do Exército (EsCom) por meio da plataforma EAD</p>
-                    <a href=""></a>
+                    <img src="../images/python.png" alt="Logotipo da linguagem Python" height="40%" width="40%" loading="lazy">
+                    <p>Curso de Programação em Python <br> Realizado na Escola de Comunicações do Exército (EsCom), por meio da plataforma EAD</p>
                 </div>
             </section>
         </section>
+
         <section id="container_projetos" class="container_projetos">
             <header class="header_sobre">
                 <div class="titulo">
@@ -201,7 +249,9 @@
                         </div>
                         <div class="quadrado"></div>
                     </div>
+
                     <h2 class="titulo_formacao">Projetos</h2>
+
                     <div class="detalhes">
                         <div class="quadrado"></div>
                         <div class="linhas_direita">
@@ -211,30 +261,31 @@
                     </div>
                 </div>
             </header>
+
             <section class="container_lista_projetos">
-                    <div class="container_projeto">
-                        <img src="" alt="">
-                        <h3>PROJETO1</h3>
-                        <p>Projeto simulando uma infraestrutura de uma loja de materiais de construção</p>
-                    </div>
-                    <div class="container_projeto">
-                        <img src="" alt="">
-                        <h3>PROJETO1</h3>
-                        <p></p>
-                    </div>
-                    <div class="container_projeto">
-                        <img src="" alt="">
-                        <h3>PROJETO1</h3>
-                        <p></p>
-                    </div>
-                    <div class="container_projeto">
-                        <img src="" alt="">
-                        <h3>PROJETO1</h3>
-                        <p></p>
-                    </div>
+                <div class="container_projeto">
+                    <h3>Projeto 1</h3>
+                    <p>Projeto simulando a infraestrutura de uma loja de materiais de construção.</p>
+                </div>
+
+                <div class="container_projeto">
+                    <h3>Projeto 2</h3>
+                    <p></p>
+                </div>
+
+                <div class="container_projeto">
+                    <h3>Projeto 3</h3>
+                    <p></p>
+                </div>
+
+                <div class="container_projeto">
+                    <h3>Projeto 4</h3>
+                    <p></p>
+                </div>
             </section>
-        </section> -->
+        </section>
     </main>
+
     <script src="../js/formacao.js"></script>
     <script src="../js/home.js"></script>
 </body>
