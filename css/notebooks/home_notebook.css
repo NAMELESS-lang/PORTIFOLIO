@@ -118,7 +118,7 @@
     }
 
     .div_contatos{
-        height: 12vh;
+        height: 13vh;
         gap: clamp(20px, 2vw, 30px);
     }
 
@@ -128,6 +128,10 @@
 
     .div_contatos img{
         width: clamp(20px, 15vw, 40px);
+    }
+
+    .saudacoes{
+        margin-top: clamp(10px, 1.5vw, 50px);
     }
 
     .saudacoes p{
@@ -141,7 +145,7 @@
     }
 
     .div_redes_sociais{
-        gap: min(50%, 10%);
+        margin-top: 10%;
         width: auto;
         height: auto;
         padding: 0.2% 2% 0.2% 2%;
@@ -152,7 +156,7 @@
     }
 
     .div_redes_sociais img{
-        width: clamp(70px, 4vw, 100px);
+        width: clamp(70px, 8vw, 100px);
         height: auto;
     }
 }
