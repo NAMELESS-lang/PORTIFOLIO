@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.ferramentas_mobile{
+    display: none;
+}
+
 #botao_menu{
     display: none;
 }
