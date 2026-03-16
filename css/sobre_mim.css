@@ -67,7 +67,7 @@
 .linha1{
     width: 30%;
     height: 1px;
-    background-color: var(--cor_linhas);
+    background-color: var(--cor_texto);
 }
 
 .linha2{
@@ -142,25 +142,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.focado_em img{
-    width: 30%;
-    height: 30%;
-}
-
-.container_item_focado_em{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
-
-.container_item_focado_em p {
-    font-family: var(--fonte_texto);
-    color: var(--cor_texto);
-    font-weight: 200;
 }
 
 .adorno_1, .adorno_2, .adorno_3{

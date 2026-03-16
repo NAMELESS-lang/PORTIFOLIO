@@ -1,0 +1,13 @@
+.ferramentas img{
+    width: clamp(40px, 4vw, 70px);
+    height: clamp(40px, 4vw, 70px);
+}
+
+.ferramentas p{
+    font-size: clamp(1.1em, 1.5vw, 1.4em);
+}
+
+.focado_em{
+    font-size: clamp(1.2em, 1.5vw, 1.5em);
+    color: var(--cor_linhas);
+}

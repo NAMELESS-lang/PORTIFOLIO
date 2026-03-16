@@ -46,4 +46,13 @@
         width: 90%;
         height: 60vh;
     }
+
+    .ferramentas img{
+        width: clamp(30px, 7vw, 100px);
+        height: clamp(30px, 7vw, 100px);
+    }
+
+    .ferramentas p{
+        font-size: clamp(1.2em, 2.5vw, 1.5em);
+    }
 }
