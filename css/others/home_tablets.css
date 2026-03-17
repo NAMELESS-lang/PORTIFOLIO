@@ -138,7 +138,6 @@
 
     .saudacoes p{
         font-size: clamp(2em, 5.5vw, 9em);
-        color:blue;
     }
 
     .links_redes_sociais{
@@ -291,7 +290,6 @@
 
     .saudacoes p{
         font-size: clamp(1.5em, 5vw, 3.8em);
-        color:cyan;
     }
 
     .links_redes_sociais{

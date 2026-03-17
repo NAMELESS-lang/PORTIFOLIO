@@ -136,7 +136,6 @@
 
     .saudacoes p{
         font-size: clamp(2em, 4vw, 9em);
-        color:red;
     }
 
     .links_redes_sociais{
