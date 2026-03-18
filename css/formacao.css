@@ -13,10 +13,18 @@
     text-transform: uppercase;
 }
 
+.container_curso{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container_curso h4{
     color: var(--cor_linhas);
     font-family: var(--fonte_texto);
     font-weight: 200;
+    text-align: center;
 }
 
 .container_curso p{
@@ -30,6 +38,10 @@
     text-decoration: none;
     color: var(--cor_linhas);
     font-family: var(--fonte_texto);
+    border: 1px solid var(--cor_linhas);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .conceitos_estudados{
@@ -74,7 +86,7 @@
     }
 
 
-@media (max-width: 1920px) and (max-height: 1080px){
+@media (max-width: 1920px){
     .lista_cursos{
         display: flex;
         justify-content: center;
