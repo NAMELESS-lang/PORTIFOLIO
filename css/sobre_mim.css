@@ -66,13 +66,13 @@
 
 .linha1{
     width: 30%;
-    height: 1px;
+    height: 2px;
     background-color: var(--cor_texto);
 }
 
 .linha2{
     width: 70%;
-    height: 1px;
+    height: 2px;
     background-color: var(--cor_linhas);
 }
 .titulo p{

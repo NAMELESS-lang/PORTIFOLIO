@@ -1,0 +1,61 @@
+@media (max-width: 480px){
+    .lista_cursos_desktop{
+        display: none;
+    }
+
+    .lista_cursos_mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 35vh;
+    }
+
+    .container_curso{
+        gap: 20px;
+    }
+
+    .container_curso img{
+        width: clamp(70px, 8vw, 100px);
+        height: clamp(70px, 8vw, 100px);
+    }
+
+    .container_curso p {
+        font-size: clamp(1.1em, 1.5vw, 1.4em);
+    }
+
+    #botao_mais_detalhes_curso_mobile{
+        background-color: transparent;
+        border: 1px solid var(--cor_linhas);
+        border-radius: 5px;
+        color: var(--cor_texto);
+        width: 100%;
+        font-size: clamp(1.1em, 2vw, 1.3em);
+        font-weight: 200;
+    }
+
+    .header_sobre{
+        height: 13vh;
+        /* border: 2px solid red; */
+    }
+
+    .container_formacao{
+        width: 90%;
+    }
+
+    .header_sobre h3{
+        text-align: center;
+        font-size: clamp(20px, 1vw, 40px);
+    }
+
+    .detalhes{
+        width: 25%;
+    }
+
+    .linha1{
+     width: 60%;   
+    }
+
+    .linhas_esquerda, .linha_direita, .linha2{
+        width: 100%;
+    }
+}

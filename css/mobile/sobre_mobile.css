@@ -96,23 +96,10 @@
     .seta_esquerda{
         width: clamp(3em, 7vw, 10em);
         height: clamp(3em, 7vw, 10em);
-        transform: rotate(45deg);
-        border: none;
-        border-left: 2px solid var(--cor_texto);
-        border-bottom: 2px solid var(--cor_texto);
-        cursor: pointer;
-        background-color: transparent;
-
     }
 
     .seta_direita{
         width: clamp(3em, 7vw, 10em);
         height: clamp(3em, 7vw, 10em);
-        transform: rotate(45deg);
-        border: none;
-        border-top: 2px solid var(--cor_texto);
-        border-right: 2px solid var(--cor_texto);
-        cursor: pointer;
-        background-color: transparent;
     }
 }

@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="../css/mobile/sobre_mobile.css" media="(max-width: 480px)">
 
     <link rel="stylesheet" href="../css/formacao.css">
+    <link rel="stylesheet" href="../css/others/formacao_tablets.css">
+    <link rel="stylesheet" href="../css/mobile/formacao_mobile.css">
     <link rel="stylesheet" href="../css/projetos.css">
 </head>
 <body>
@@ -201,11 +203,12 @@
                 </div>
             </header>
 
-            <section class="lista_cursos" style="gap: 15%;">
-                <div class="container_curso">
+            <section class="lista_cursos_desktop">
+                <button id="seta_esquerda" class="seta_esquerda" type="button" aria-label="Ferramenta anterior"></button>
+                <div id="container_curso_1" class="container_curso">
                     <img src="../images/tecnico_ti.png" alt="Imagem representando o curso técnico em informática" width="20%" height="45%" loading="lazy">
                     <p>Técnico em Informática <br> Realizado no período de 2023 a 2024</p>
-
+                    
                     <h4>Conceitos Estudados</h4>
                     <ul class="conceitos_estudados">
                         <li>Montagem e manutenção de computadores</li>
@@ -217,7 +220,7 @@
                     <a href="../images/como_deve_ficar.png">Certificado</a>
                 </div>
 
-                <div class="container_curso">
+                <div id="container_curso_2" class="container_curso">
                     <img src="../images/w.png" alt="Imagem representando a graduação em Sistemas para Internet" width="45%" height="40%" loading="lazy">
                     <p>Graduação em Sistemas para Internet <br> Realizada no período de 2025 a 2027</p>
 
@@ -229,15 +232,54 @@
 
                     <a href="../images/como_deve_ficar.png">Certificado</a>
                 </div>
+                <button id="seta_direita" class="seta_direita" type="button" aria-label="Próxima ferramenta"></button>
             </section>
 
-            <h3 class="subtitulo_certificacoes">Certificações</h3>
+            <section class="lista_cursos_mobile">
+                <button id="seta_esquerda" class="seta_esquerda" type="button" aria-label="Ferramenta anterior"></button>
+                <div id="container_curso_1" class="container_curso">
+                    <img src="../images/tecnico_ti.png" alt="Imagem representando o curso técnico em informática" loading="lazy">
+                    <p>Técnico em Informática</p>
+                    <button id="botao_mais_detalhes_curso_mobile"> Mais Detalhes</button>
+                </div>
+                <button id="seta_direita" class="seta_direita" type="button" aria-label="Próxima ferramenta"></button> 
+            </section>
 
-            <section class="lista_cursos">
+            <header class="header_sobre">
+                <div class="titulo">
+                        <div class="detalhes">
+                            <div class="linhas_esqueda">
+                                <div class="linha2"></div>
+                            </div>
+                            <div class="quadrado"></div>
+                        </div>
+
+                        <h2 class="titulo_certificacoes">Certificações</h2>
+
+                        <div class="detalhes">
+                            <div class="quadrado"></div>
+                            <div class="linhas_direita">
+                                <div class="linha2"></div>
+                            </div>
+                        </div>
+                </div>
+            </header>
+
+            <section class="lista_cursos_desktop">
                 <div class="container_curso">
                     <img src="../images/python.png" alt="Logotipo da linguagem Python" height="40%" width="40%" loading="lazy">
                     <p>Curso de Programação em Python <br> Realizado na Escola de Comunicações do Exército (EsCom), por meio da plataforma EAD</p>
                 </div>
+            </section>
+
+            <section class="lista_cursos_mobile">
+                <button id="seta_esquerda" class="seta_esquerda" type="button" aria-label="Ferramenta anterior"></button>
+                <div class="container_curso">
+                    <img src="../images/python.png" alt="Logotipo da linguagem Python" loading="lazy">
+                    <p>Curso de Programação em Python </p>
+                    <button id="botao_mais_detalhes_curso_mobile"> Mais Detalhes</button>
+                </div>
+                <button id="seta_direita" class="seta_direita" type="button" aria-label="Próxima ferramenta"></button> 
             </section>
         </section>
 

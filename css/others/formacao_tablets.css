@@ -1,0 +1,131 @@
+@media (max-width: 1024px) and (orientation:portrait){
+    .lista_cursos_desktop{
+        display: none;
+    }
+
+    .lista_cursos_mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 35vh;
+    }
+
+    .container_curso{
+        gap: 20px;
+    }
+
+    .container_curso img{
+        width: clamp(100px, 15vw, 160px);
+        height: clamp(100px, 15vw, 160px);
+    }
+
+    .container_curso p{
+        font-size: clamp(1.4em, 5vw, 1.8em);
+    }
+
+    #botao_mais_detalhes_curso_mobile{
+        background-color: transparent;
+        border: 1px solid var(--cor_linhas);
+        border-radius: 5px;
+        color: var(--cor_texto);
+        font-size: clamp(1.6em, 6vw, 2em);
+        font-weight: 200;
+    }
+
+    .seta_direita{
+        width: clamp(50px, 7vw, 80px);
+        height: clamp(50px, 7vw, 80px);
+    }
+
+    .seta_esquerda{
+        width: clamp(50px, 7vw, 80px);
+        height: clamp(50px, 7vw, 80px);
+    }
+
+    .header_sobre{
+        height: 13vh;
+    }
+
+    .container_formacao{
+        width: 90%;
+    }
+
+    .header_sobre h2{
+        text-align: center;
+        font-size: clamp(1.3em, 7vw, 1.9em);
+    }
+
+    .detalhes{
+        width: 25%;
+    }
+
+    .quadrado{
+        width: 15%;
+        height: 15%;
+    }
+
+    .linha1{
+     width: 60%;   
+    }
+
+    .linhas_esquerda, .linha_direita, .linha2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .lista_cursos_desktop{
+        display: none;
+    }
+
+    .lista_cursos_mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 35vh;
+    }
+
+    .container_curso{
+        gap: 20px;
+    }
+
+    .container_curso img{
+        width: clamp(70px, 8vw, 100px);
+        height: clamp(70px, 8vw, 100px);
+    }
+
+    #botao_mais_detalhes_curso_mobile{
+        background-color: transparent;
+        border: 1px solid var(--cor_linhas);
+        border-radius: 5px;
+        color: var(--cor_texto);
+        width: 100%;
+        font-size: clamp(1.1em, 2vw, 1.3em);
+        font-weight: 200;
+    }
+
+    .header_sobre{
+        height: 13vh;
+    }
+
+    .container_formacao{
+        width: 90%;
+    }
+
+    .header_sobre h3{
+        text-align: center;
+        font-size: clamp(20px, 1vw, 40px);
+    }
+
+    .detalhes{
+        width: 25%;
+    }
+
+    .linha1{
+     width: 60%;   
+    }
+
+    .linhas_esquerda, .linha_direita, .linha2{
+        width: 100%;
+    }
+}
