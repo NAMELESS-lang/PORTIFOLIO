@@ -79,9 +79,12 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        border: 1px solid var(--cor_linhas);
+        border-radius: 2px;
     }
 
     .container_ferramenta_mobile img{
+        margin-top: 20px;
         width: clamp(6em, 20vw, 20em);
         height: clamp(6em, 20vw, 20em);
     }

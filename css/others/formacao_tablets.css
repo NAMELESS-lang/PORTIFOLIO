@@ -23,15 +23,6 @@
         font-size: clamp(1.4em, 5vw, 1.8em);
     }
 
-    #botao_mais_detalhes_curso_mobile{
-        background-color: transparent;
-        border: 1px solid var(--cor_linhas);
-        border-radius: 5px;
-        color: var(--cor_texto);
-        font-size: clamp(1.6em, 6vw, 2em);
-        font-weight: 200;
-    }
-
     .seta_direita{
         width: clamp(50px, 7vw, 80px);
         height: clamp(50px, 7vw, 80px);
@@ -92,16 +83,6 @@
     .container_curso img{
         width: clamp(70px, 8vw, 100px);
         height: clamp(70px, 8vw, 100px);
-    }
-
-    #botao_mais_detalhes_curso_mobile{
-        background-color: transparent;
-        border: 1px solid var(--cor_linhas);
-        border-radius: 5px;
-        color: var(--cor_texto);
-        width: 100%;
-        font-size: clamp(1.1em, 2vw, 1.3em);
-        font-weight: 200;
     }
 
     .header_sobre{
