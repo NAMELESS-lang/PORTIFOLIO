@@ -1,13 +1,16 @@
 @media (max-width: 1024px) and (orientation:portrait){
     .lista_cursos_desktop{
-        display: none;
-    }
-
-    .lista_cursos_mobile{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 35vh;
+    }
+
+    .lista_cursos_mobile{
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 35vh; */
+        display: none;
     }
 
     .container_curso{
@@ -15,22 +18,12 @@
     }
 
     .container_curso img{
-        width: clamp(100px, 15vw, 160px);
-        height: clamp(100px, 15vw, 160px);
+        width: clamp(100px, 10vw, 160px);
+        height: clamp(100px, 10vw, 160px);
     }
 
     .container_curso p{
-        font-size: clamp(1.4em, 5vw, 1.8em);
-    }
-
-    .seta_direita{
-        width: clamp(50px, 7vw, 80px);
-        height: clamp(50px, 7vw, 80px);
-    }
-
-    .seta_esquerda{
-        width: clamp(50px, 7vw, 80px);
-        height: clamp(50px, 7vw, 80px);
+        font-size: clamp(1.2em, 2vw, 1.8em);
     }
 
     .header_sobre{
@@ -71,13 +64,20 @@
 
     .lista_cursos_mobile{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        height: 35vh;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .container_curso{
-        gap: 20px;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid var(--cor_linhas);
+        border-radius: 5px;
+        width: 90%;
+        height: 10vh;
+        gap: 30px;
     }
 
     .container_curso img{
@@ -108,5 +108,17 @@
 
     .linhas_esquerda, .linha_direita, .linha2{
         width: 100%;
+    }
+
+    #botao_mais_detalhes_curso_mobile{
+        border: none;
+        border-bottom: 2px solid var(--cor_linhas);
+        border-right: 2px solid var(--cor_linhas);
+        transform: rotate(43deg);
+        background-color: transparent;
+        width: clamp(20px, 4vw, 40px);
+        height: clamp(20px, 4vw, 40px);
+        margin-bottom: clamp(10px, 1vw, 15px);
+        cursor: pointer;
     }
 }
