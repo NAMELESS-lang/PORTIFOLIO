@@ -20,6 +20,13 @@
             background-repeat: no-repeat; 
             }
 
+        #sobre_mim{
+            min-height: 100vh;
+            background-image: url("../images/fundo2.png");
+            background-size: cover;        
+            background-position: center;   
+            background-repeat: no-repeat; 
+        }
         .icone {
             max-width: 100px;
             height: auto;
@@ -30,9 +37,20 @@
             height: auto;
         }
 
-        .h1, .h4{
-            color: #ededed;
+        .h1,.h2,.h4{
             font-weight: 200px !important;
+        }
+
+        .nav-link{
+            color: #ededed;
+        }
+
+        .nav-link:hover{
+            color: #dea526;
+        }
+
+        span{
+            color: #dea526;
         }
     </style>
   </head>
@@ -47,34 +65,33 @@
             />
         </div>
         <div class="col-7 pl-5 pr-5">
-            <ul class="nav d-flex justify-content-around">
+            <ul class="nav d-flex justify-content-around align-items-center">
                 <li class="nav-item">
                     <a
-                        class="nav-link active"
+                        class="nav-link"
                         href="#"
                         aria-current="page"
                     >
-                        <h4 class="h4">Contato</h4>
+                        <h2 class="h2">Contato</h2>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <h4 class="h4">Sobre Mim</h4>
+                        <h2 class="h2">Sobre Mim</h2>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">
-                        <h4 class="h4">Formação</h4>
+                        <h2 class="h2">Formação</h2>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a
-                        class="nav-link disabled"
+                        class="nav-link"
                         href="#"
                         aria-disabled="true"
-                        tabindex="-1"
                     >
-                        <h4 class="h4">Disabled</h4>
+                        <h2 class="h2">Projetos</h2>
                     </a>
                 </li>
             </ul>
@@ -83,27 +100,197 @@
     <div class="row">
         <div class="col-12">
             <h1 class="h1 text-center pr-3">
-               Olá meu nome é Matheus Fiedler Colla
+               Olá meu nome é <span>Matheus Fiedler Colla</span>
             </h1>
-            <h3 class="h3 text-center pl-5">
-                Web Developer
-            </h3>
+            <h2 class="h2 text-center">
+                <span>Web</span> Developer
+            </h2>
         </div>
     </div>
     <div class="row">
         <div class="col-6 d-flex justify-content-center">
+            <a href="">
+                <img
+                    class="img-fluid icone rounded"
+                    src="./images/git.png"
+                    alt="Bike"
+                />
+            </a>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+            <a href="">
+                <img
+                    class="img-fluid icone rounded"
+                    src="./images/linkedin.png"
+                    alt="Bike"
+                />
+            </a>
+        </div>
+    </div>
+</div>
+<div id="sobre_mim" class="container-fluid d-flex flex-column min-vh-100">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h2 text-center">
+               Sobre mim
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
             <img
-                class="img-fluid icone rounded"
-                src="./images/git.png"
+                class="img-fluid rounded"
+                src="/sports-q-c-140-140-3.jpg"
                 alt="Bike"
             />
         </div>
-        <div class="col-6 d-flex justify-content-center">
-            <img
-                class="img-fluid icone rounded"
-                src="./images/linkedin.png"
-                alt="Bike"
-            />
+        <div class="col-6">
+            <h3 class="h3">
+                h3. Lorem ipsum dolor sit amet.
+            </h3>
+            <p>
+                Olá, meu nome é Matheus e busco trabalho na área de infraestrutura e suporte em TI.
+                Não possuo experiência comprovada, mas, com este portfólio e os projetos que apresento nele,
+                consigo demonstrar o conhecimento que possuo na área.
+            </p>
+            <div
+                class="carousel slide"
+                id="carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-indicators">
+                    <button
+                        class="active"
+                        type="button"
+                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                        data-bs-slide-to="0"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                        data-bs-slide-to="1"
+                        aria-current="false"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                        data-bs-slide-to="2"
+                        aria-current="false"
+                        aria-label="Slide 3"
+                    ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="d-block w-100"
+                            src="/sports-q-c-1600-500-1.jpg"
+                            alt="Carousel image"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                First Thumbnail
+                                label
+                            </h5>
+                            <p>
+                                Cras justo odio,
+                                dapibus ac
+                                facilisis in,
+                                egestas eget quam.
+                                Donec id elit non
+                                mi porta gravida
+                                at eget metus.
+                                Nullam id dolor id
+                                nibh ultricies
+                                vehicula ut id
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img
+                            class="d-block w-100"
+                            src="images/apache.jpg"
+                            alt="Carousel image"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                Second Thumbnail
+                                label
+                            </h5>
+                            <p>
+                                Cras justo odio,
+                                dapibus ac
+                                facilisis in,
+                                egestas eget quam.
+                                Donec id elit non
+                                mi porta gravida
+                                at eget metus.
+                                Nullam id dolor id
+                                nibh ultricies
+                                vehicula ut id
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img
+                            class="d-block w-100"
+                            src="/images/"
+                            alt="Carousel image"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>
+                                Third Thumbnail
+                                label
+                            </h5>
+                            <p>
+                                Cras justo odio,
+                                dapibus ac
+                                facilisis in,
+                                egestas eget quam.
+                                Donec id elit non
+                                mi porta gravida
+                                at eget metus.
+                                Nullam id dolor id
+                                nibh ultricies
+                                vehicula ut id
+                                elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">
+                        prev
+                    </span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">
+                        next
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
 </div>
