@@ -1,0 +1,32 @@
+#home{
+    min-height: 100vh;
+    background-image: url("../images/plano_fundo.png");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    }
+#home .icone {
+    max-width: 100px;
+    height: auto;
+}
+
+#home .logo{
+    max-width: 170px;
+    height: auto;
+}
+
+#home .h1,.h2,.h4{
+    font-weight: 200px !important;
+}
+
+#home .nav-link{
+    color: #ededed;
+}
+
+#home .nav-link:hover{
+    color: #dea526;
+}
+
+#home span{
+    color: #dea526;
+}
