@@ -24,14 +24,17 @@
 
     #sobre_mim h1{
         color: var(--cor_texto);
+        font-weight: 300;
     }
 
     #sobre_mim h3{
         color: #dea526;
+        font-weight: 200;
     }
 
     #sobre_mim p{
         color: var(--cor_texto);
+        font-weight: 200;
     }
 
     #sobre_mim{
@@ -48,7 +51,7 @@
 }
 
     #sobre_mim .carousel-item img{
-    height: 300px;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -130,16 +133,24 @@
 </div>
 
 <!-- CONTAINER SOBRE MIM -->
-<div id="sobre_mim" class="container-fluid d-flex flex-column min-vh-100 align-items-center justify-content-center">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="h1 text-center mt-4">
+<div id="sobre_mim" class="container-fluid d-flex flex-column min-vh-100 align-items-center justify-content-around">
+    <div class="row d-flex justify-content-center align-items-center w-100">
+        <div class="col-3 d-flex flex-column align-items-end">
+            <div class="col-6 mb-2" style="border: 1px solid #dea526;"></div>
+            <div class="col-12" style="border: 1px solid #ededed;"></div>
+        </div>
+        <div class="col-3">
+            <h1 class="h1 text-center">
                SOBRE MIM
             </h1>
         </div>
+        <div class="col-3 d-flex flex-column">
+            <div class="col-6 mb-2" style="border: 1px solid #dea526;"></div>
+            <div class="col-12" style="border: 1px solid #ededed;"></div>
+        </div>
     </div>
     <div class="row">
-        <div class="col-6">
+        <div class="col-6 d-flex justify-content-center align-items-center">
             <img
                 class="img-fluid rounded"
                 src="./images/sistemas para internet.png"
@@ -147,43 +158,19 @@
             />
         </div>
         <div class="col-6">
-            <p class="text-left">
+            <p class="text-left mb-5">
                 Olá, meu nome é Matheus e busco trabalho na área de infraestrutura e suporte em TI.
                 Não possuo experiência comprovada, mas, com este portfólio e os projetos que apresento nele,
                 consigo demonstrar o conhecimento que possuo na área.
             </p>
             <h3 class="h3 text-center">
-                Ferramentas e softwares que uso
+                Ferramentas e softwares que possuo conhecimento
             </h3>
             <div
                 class="carousel slide"
                 id="carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
                 data-bs-ride="carousel"
             >
-                <div class="carousel-indicators">
-                    <button
-                        class="active"
-                        type="button"
-                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
-                        data-bs-slide-to="0"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
-                        data-bs-slide-to="1"
-                        aria-current="false"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carousel-1836ae11-b32a-4146-a61f-86a377e1bf1a"
-                        data-bs-slide-to="2"
-                        aria-current="false"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img
@@ -219,8 +206,7 @@
                         />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>
-                                Third Thumbnail
-                                label
+                                Docker
                             </h5>
                         </div>
                     </div>
