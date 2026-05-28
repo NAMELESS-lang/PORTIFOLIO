@@ -6,7 +6,6 @@
     <title>layoutit-project</title>
     <meta name="description" content="Generated with Layoutit" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/animacoes.css">
     <link rel="stylesheet" href="./css/pagina_inicial.css">
@@ -48,39 +47,30 @@
         background-repeat: no-repeat; 
     }
 
-    #sobre_mim .carousel{
-    width: 100%;
-    margin: auto;
-}
-
-    #sobre_mim .carousel-item img{
-    height: 200px;
-    object-fit: contain;
-}
 
     </style>
   </head>
   <body>
     <div id="home" class="container-fluid d-flex flex-column justify-content-around min-vh-100">
     <div class="row">
-        <div class="col-3 d-flex justify-content-center align-items-center">
+        <div class="col-4 d-flex justify-content-center align-items-center">
             <img
                 class="img logo rounded"
                 src="./images/logo_matheus.png"
                 alt="Bike"
             />
         </div>
-    <div class="col-9">
+    <div class="col-8">
         <div id="nav-area">
             <div class="row">
             <div class="col">
                 <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid d-flex justify-content-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon""></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav d-flex justify-content-around w-100">
+                        <ul class="navbar-nav d-flex justify-content-around align-items-center w-100">
                             <li class="nav-item">
                             <a id="botao_contato" class="nav-link" href="#">Contato</a>
                             </li>
@@ -111,16 +101,17 @@
             <h2 class="h2 text-center">
                 <span>Web</span> Developer
             </h2>
-            <div id="contatos" class="row d-flex d-none justify-content-center mt-5">
-                <div class="col-4 d-flex justify-content-center align-items-center gap-1">
-                    <img class="imagem_contato img-fluid icone rounded" src="images/icone_telefone.png">
-                    <p>(55) 9 8123-2927</p>
+            <div id="contatos" class="d-none flex-column flex-md-row justify-content-center align-items-center gap-3 mt-4">
+                <div class="contato-item">
+                    <img class="imagem_contato img-fluid icone rounded" src="images/icone_telefone.png" alt="Telefone">
+                    <p class="contato-texto">(55) 9 8123-2927</p>
                 </div>
-                <div class="col-4 d-flex justify-content-center align-items-center gap-1">
-                    <img class="imagem_contato img-fluid icone rounded" src="/images/icone_email.png">
-                    <p>matheusfiedlercolla@gmail.com</p>
+
+                <div class="contato-item">
+                    <img class="imagem_contato img-fluid icone rounded" src="images/icone_email.png" alt="Email">
+                    <p class="contato-texto">matheusfiedlercolla@gmail.com</p>
                 </div>
-            </div>  
+            </div> 
         </div>
     </div>
     <div class="row">
